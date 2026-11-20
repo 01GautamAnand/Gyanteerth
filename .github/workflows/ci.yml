@@ -18,6 +18,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Display repository identifiers for AWS OIDC
+        shell: bash
+        run: |
+          echo "Owner ID: $GITHUB_REPOSITORY_OWNER_ID"
+          echo "Repository ID: $GITHUB_REPOSITORY_ID"
+          
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -38,8 +44,3 @@ jobs:
 
       - name: Build application
         run: npm run build
-      
-      - name: Display repository identifiers for AWS OIDC
-        run: |
-          echo "Owner ID: $GITHUB_REPOSITORY_OWNER_ID"
-          echo "Repository ID: $GITHUB_REPOSITORY_ID"
