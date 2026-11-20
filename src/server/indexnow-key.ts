@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { normalize, resolve, sep } from "node:path";
 
-const INDEXNOW_KEY_FILENAME = "airo-indexnow.json";
+const INDEXNOW_KEY_FILENAME = "indexnow-key.json";
 
 interface IndexNowKeyManifest {
 	key: string;

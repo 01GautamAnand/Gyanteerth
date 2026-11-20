@@ -1,6 +1,5 @@
 import express, { type Express, type NextFunction, type Request, type Response } from "express";
 import { fileURLToPath } from "node:url";
-import { isIP } from "node:net";
 import { dirname, extname, join } from "node:path";
 import { readFileSync } from "node:fs";
 
@@ -17,6 +16,7 @@ import {
 import { loadIndexNowKey } from "./indexnow-key";
 import { isSystemHost } from "./seo-host";
 import { llmsTxtHandler } from "./llms-txt";
+import { createMediaAssetsMiddleware } from "../../export-plugins/media-assets-plugin";
 
 export interface SsrRenderResult {
 	html: string;
@@ -265,55 +265,6 @@ function baseUrl(req: Request): string {
 	return `${req.protocol}://${req.hostname}`;
 }
 
-type SiteOriginReason = "accepted" | "unparseable" | "bad_scheme" | "system_host";
-
-function siteOriginReason(url: URL | null): SiteOriginReason {
-	if (!url) return "unparseable";
-	if (url.protocol !== "https:") return "bad_scheme";
-	if (isSystemHost(url)) return "system_host";
-	return "accepted";
-}
-
-function isIpHost(hostname: string | undefined): boolean {
-	return isIP((hostname ?? "").replace(/^\[|\]$/g, "")) !== 0;
-}
-
-function parseUrl(raw: string): URL | null {
-	try {
-		return new URL(raw);
-	} catch {
-		return null;
-	}
-}
-
-export function preferredOrigin(req: Request): string {
-	const raw: string | undefined = req.get("x-airo-site-origin");
-	if (!raw) return baseUrl(req);
-	const url: URL | null = parseUrl(raw);
-	const reason: SiteOriginReason = siteOriginReason(url);
-	const origin: string = url && reason === "accepted" ? url.origin : baseUrl(req);
-	const headerIsIp: boolean = url !== null && isIpHost(url.hostname);
-	const requestIsIp: boolean = isIpHost(req.hostname);
-	if (headerIsIp || requestIsIp) {
-		const where: string = headerIsIp && requestIsIp ? "both" : headerIsIp ? "header" : "request";
-		console.info("ssr.site-origin.ip-literal", `in=${where} reason=${reason}`);
-		return origin;
-	}
-	console.info("ssr.site-origin.observed", `requestOrigin=${baseUrl(req)} preferredOrigin=${origin} reason=${reason}`);
-	return origin;
-}
-
-/**
- * Absolute URL of the platform's default social image. dev-supervisor sets this
- * header (after stripping any client copy) only when the app has a usable logo
- * or hero image; render() uses it for og:image/twitter:image the page omits.
- */
-export function socialPreviewImageUrl(req: Request): string | undefined {
-	const path: string | undefined = req.get("x-airo-media-social-preview");
-	if (!path || !/^\/airo-assets\/images\/[\w/-]+$/.test(path)) return undefined;
-	return `${req.protocol}://${req.hostname}${path}`;
-}
-
 function escapeXml(s: string): string {
 	return s.replace(/[&<>"']/g, (c) =>
 		({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" })[c]!,
@@ -371,6 +322,7 @@ if (import.meta.env.PROD) {
 	const indexNowKey = loadIndexNowKey(__dirname);
 
 	registerAdSenseTextRoutes(app, adSenseRuntimeConfig);
+	app.use(createMediaAssetsMiddleware(() => process.cwd()));
 
 	if (indexNowKey !== null) {
 		app.get(`/${indexNowKey}.txt`, (_req, res) => {
@@ -428,7 +380,7 @@ if (import.meta.env.PROD) {
 	// load is unrecoverable at runtime - exiting lets the container
 	// scheduler restart with a clean slate rather than leaving the server
 	// to serve silent 503s indefinitely against a single startup log.
-	let renderFn: ((url: string, siteOrigin?: string, socialPreviewImage?: string) => Promise<SsrRenderResult>) | null = null;
+	let renderFn: ((url: string, siteOrigin?: string) => Promise<SsrRenderResult>) | null = null;
 	const SSR_MODULE_LOAD_TIMEOUT_MS = 30_000;
 	const loadTimeout = setTimeout(() => {
 		if (renderFn !== null) return;
@@ -470,12 +422,7 @@ if (import.meta.env.PROD) {
 			return sendFallback();
 		}
 		try {
-			const socialPreviewImage: string | undefined = socialPreviewImageUrl(req);
-			const result = await renderFn(
-				req.url,
-				`${req.protocol}://${req.hostname}`,
-				socialPreviewImage,
-			);
+			const result = await renderFn(req.url, `${req.protocol}://${req.hostname}`);
 			if (result.redirect) {
 				// Redirect thrown from a loader/action surfaces as a Response.
 				// Forward it so the browser actually navigates to the new URL
@@ -502,7 +449,6 @@ if (import.meta.env.PROD) {
 					.send(fallbackShell);
 				return;
 			}
-			preferredOrigin(req);
 			// Per-host SEO injection. System URLs get a noindex meta so
 			// crawlers drop them from the index over time; customer-attached
 			// hosts get a self-canonical link so search engines treat them

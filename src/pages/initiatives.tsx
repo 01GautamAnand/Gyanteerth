@@ -60,7 +60,7 @@ export default function InitiativesPage() {
         <section className="relative bg-primary text-primary-foreground overflow-hidden" aria-label="Page header">
           <div className="absolute inset-0 pointer-events-none">
             <img
-              src="/airo-assets/images/pages/initiatives/hero"
+              src="/media/images/pages/initiatives/hero"
               alt=""
               className="w-full h-full object-cover opacity-20"
               loading="eager"

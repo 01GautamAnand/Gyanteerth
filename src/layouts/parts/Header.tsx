@@ -42,7 +42,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 shrink-0 group">
             <img
-              src="/airo-assets/images/logo/horizontal"
+              src="/media/images/logo/horizontal"
               alt="Gyanteerth Educational Society"
               className="block h-auto max-h-10 md:max-h-12 w-auto max-w-[200px] object-contain"
             />

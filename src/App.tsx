@@ -1,9 +1,7 @@
 import { lazy, Suspense } from 'react';
-import { Outlet, type RouteObject } from 'react-router';
+import { createBrowserRouter, Outlet, type RouteObject } from 'react-router';
+import { RouterProvider } from 'react-router/dom';
 
-import AiroErrorBoundary from '../export-plugins/AiroErrorBoundary';
-import { AiroRouterProvider } from '../export-plugins/AiroRouterProvider';
-import { createAiroBrowserRouter } from '../export-plugins/router-contract';
 import CookieBannerErrorBoundary from '@/components/CookieBannerErrorBoundary';
 import RootLayout from './layouts/RootLayout';
 import Spinner from './components/Spinner';
@@ -30,29 +28,15 @@ const rootElement = (
   </Suspense>
 );
 
-// Wrap the agent-editable flat `routes` array in a layout route so ScrollRestoration
-// + shared chrome live once above every page. Keeping the wrap here (instead of
-// in routes.tsx) preserves the agent's simple flat-route contract. The dev
-// boundary must live inside the route element so React Router doesn't replace it
-// with its default route error UI before our boundary can catch render errors.
-//
-// `captureGlobalErrors={false}`: the ROOT boundary in main.tsx owns the global
-// window.onerror/unhandledrejection handlers. This inner boundary only catches
-// route render errors via componentDidCatch — installing window handlers here
-// too would double-forward async errors and stack a second overlay.
+// Keep shared site chrome and scroll restoration above every page.
 const routeTree: RouteObject[] = [
   {
-    element:
-      import.meta.env.MODE === 'development' ? (
-        <AiroErrorBoundary captureGlobalErrors={false}>{rootElement}</AiroErrorBoundary>
-      ) : (
-        rootElement
-      ),
+    element: rootElement,
     children: routes,
   },
 ];
 
-const router = createAiroBrowserRouter(routeTree, { notFoundRouteId: 'airo-not-found' });
+const router = createBrowserRouter(routeTree);
 
 const _virtualPageState = { lastPath: null as string | null };
 router.subscribe((state) => {
@@ -72,7 +56,7 @@ router.subscribe((state) => {
 export default function App() {
   return (
     <>
-      <AiroRouterProvider router={router} />
+      <RouterProvider router={router} />
       {/*
         CookieBanner reads document.cookie and subscribes to browser events.
         App.tsx is client-only (entry-server.tsx renders the route tree

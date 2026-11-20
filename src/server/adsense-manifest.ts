@@ -22,7 +22,7 @@ interface AdSenseRuntimeManifest {
 	appAdsTxt: AdSenseTextFileManifest;
 }
 
-const ADSENSE_MANIFEST_FILENAME = "airo-adsense.json";
+const ADSENSE_MANIFEST_FILENAME = "adsense-manifest.json";
 const ADSENSE_PUBLISHER_ID_PATTERN = /^ca-pub-\d{16}$/;
 
 export const EMPTY_ADSENSE_RUNTIME_CONFIG: AdSenseRuntimeConfig = {

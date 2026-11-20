@@ -2,12 +2,10 @@
   "name": "v8-app-template",
   "version": "1.0.0",
   "type": "module",
-  "imports": {
-    "#airo/secrets": "./export-plugins/airo-secrets.ts"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build && vite build --ssr src/server/entry.ts",
+    "start": "node dist/server.bundle.mjs",
     "preview": "vite preview --outDir dist/client",
     "test": "vitest",
     "test:ui": "vitest --ui",

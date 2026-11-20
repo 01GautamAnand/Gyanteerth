@@ -1,0 +1,60 @@
+# EB installs production dependencies from package.json/package-lock.json.
+node_modules/
+
+# Keep dist/ in the source bundle: npm start runs the built SSR server from it.
+# Do not add dist/ here even though it is ignored by .gitignore.
+
+# Git and CI metadata are not needed by the running application.
+.git/
+.github/
+
+# Never upload local credentials; configure runtime secrets in the EB environment.
+.env
+.env.*
+
+# Logs, local configuration, and package-manager leftovers.
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.local
+pnpm-lock.yaml
+
+# Editor and operating-system files.
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+
+# Build outputs and local caches. dist/ is intentionally retained above.
+dist-ssr/
+build/
+.next/
+out/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+.publish/
+
+# Runtime data, certificates, generated files, and local agent artifacts.
+pids/
+*.pid
+*.seed
+*.pid.lock
+.dev-ports.json
+.api/
+.ssl/*.pem
+.claude/
+.import-*
+.memory/
+# TypeScript cache.
+*.tsbuildinfo

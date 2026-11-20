@@ -127,7 +127,7 @@ export default function AboutPage() {
                 <div className="relative">
                   <div className="absolute -top-3 -left-3 w-full h-full border border-accent/30 pointer-events-none" />
                   <img
-                    src="/airo-assets/images/pages/about/editorial-1"
+                    src="/media/images/pages/about/editorial-1"
                     alt="Academic library and learning environment"
                     className="w-full h-72 lg:h-96 object-cover"
                     loading="lazy"

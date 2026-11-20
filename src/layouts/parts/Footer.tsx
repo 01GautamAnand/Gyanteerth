@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
               <img
-                src="/airo-assets/images/logo/horizontal/dark"
+                src="/media/images/logo/horizontal/dark"
                 alt="Gyanteerth Educational Society"
                 className="block h-auto max-h-10 w-auto max-w-[180px] object-contain"
               />

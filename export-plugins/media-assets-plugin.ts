@@ -11,10 +11,10 @@ import {
 } from './media-redirect-policy.js';
 import { parseSlotPath, resolveSlotTargetUrl } from './media-slot-selection.js';
 
-export const MANIFEST_FILENAME = 'airo-media.json';
-const IMAGE_PREFIX = '/airo-assets/images/';
-const VIDEO_PREFIX = '/airo-assets/videos/';
-const UPLOAD_PREFIX = '/airo-assets/uploads/';
+export const MANIFEST_FILENAME = 'media-manifest.json';
+const IMAGE_PREFIX = '/media/images/';
+const VIDEO_PREFIX = '/media/videos/';
+const UPLOAD_PREFIX = '/media/uploads/';
 
 export interface MediaSlot {
   currentUrl?: string;
@@ -261,7 +261,7 @@ export function createMediaAssetsMiddleware(getRoot: () => string): (
   };
 }
 
-/** Standalone dev/preview middleware for exported AAB media slot URLs. */
+/** Serves image, video, and uploaded media slots in development and preview. */
 export function mediaAssetsPlugin(): Plugin {
   let root = process.cwd();
 

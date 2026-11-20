@@ -45,7 +45,7 @@ const traverseModule: TraverseFn | { default: TraverseFn } = traverseDefault as 
   | { default: TraverseFn };
 const traverse: TraverseFn = typeof traverseModule === 'function' ? traverseModule : traverseModule.default;
 
-const CONTENT_MODULE: string = '@airo/content';
+const CONTENT_MODULE: string = '@site/content';
 const BOUND_IMPORT_NAME: string = 'Text';
 const TEXT_ATTRIBUTES: ReadonlySet<string> = new Set(['alt', 'placeholder', 'title']);
 const VALUE_ELEMENTS: ReadonlySet<string> = new Set(['input', 'textarea']);
@@ -393,7 +393,7 @@ export function assertContentAuthority(code: string, relPath: string): void {
   const enforced: readonly UnboundSite[] = enforcedSites(result.sites);
   if (enforced.length === 0) return;
   throw new Error(
-    `[airo-content] ${describeUnboundSites(relPath, enforced)}\n\n` +
+    `[site-content] ${describeUnboundSites(relPath, enforced)}\n\n` +
       `${UNBOUND_REFUSAL_STEM}, so the build cannot continue. Text resolved at runtime\n` +
       '(a translation call, for instance) is counted but not refused.',
   );
@@ -572,7 +572,7 @@ export function literalAttribute(attr: JSXAttribute): string | undefined {
 }
 
 /**
- * Local names under which `imported` enters this module from `@airo/content` — `Text` itself plus
+ * Local names under which `imported` enters this module from `@site/content` — `Text` itself plus
  * any alias (`import { Text as Copy }`). Shared with the key collector so both sides agree on which
  * JSX element is a primitive; two answers to that question would let one gate see a binding the
  * other does not.

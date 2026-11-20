@@ -49,7 +49,7 @@ const routeTree: RouteObject[] = [
 
 const handler = createStaticHandler(routeTree);
 
-export async function render(url: string, siteOrigin?: string, socialPreviewImage?: string): Promise<RenderResult> {
+export async function render(url: string, siteOrigin?: string): Promise<RenderResult> {
   // createStaticHandler works off a WHATWG Request. We only need the pathname +
   // search; scheme/host don't affect routing. Using a stable sentinel host
   // avoids env-dependent URL parsing.
@@ -107,7 +107,7 @@ export async function render(url: string, siteOrigin?: string, socialPreviewImag
         .join('\n')
     : '';
 
-  const defaults = seoHeadDefaults(head, html, requestUrl.pathname, siteOrigin, socialPreviewImage);
+  const defaults = seoHeadDefaults(head, html, requestUrl.pathname, siteOrigin);
   return { html, head: [head, defaults].filter(Boolean).join('\n'), status: context.statusCode ?? 200 };
 }
 
@@ -140,7 +140,7 @@ function metaContent(head: string, attr: 'name' | 'property', key: string): stri
  * Marks tags added outside Helmet. They describe only the server-rendered page,
  * so SEO_DEFAULTS_CLEANUP removes them on the first in-app navigation.
  */
-const SEO_DEFAULT_ATTR = 'data-airo-seo-default';
+const SEO_DEFAULT_ATTR = 'data-site-seo-default';
 
 /**
  * Shipped with the defaults (not in App.tsx) so every path that installs this
@@ -155,10 +155,9 @@ export const SEO_DEFAULTS_CLEANUP = `(function(){var A='${SEO_DEFAULT_ATTR}',p=l
 
 /**
  * Head tags derived from the page's own title/description and siteMeta, for each
- * one the rendered page does not already set. Page values always win. The image
- * falls back to the page's other image tag, then the platform social image.
+ * one the rendered page does not already set. Page values always win.
  */
-function seoHeadDefaults(head: string, html: string, pathname: string, siteOrigin?: string, socialPreviewImage?: string): string {
+function seoHeadDefaults(head: string, html: string, pathname: string, siteOrigin?: string): string {
   const titleMatch = head.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
   const title = decodeEntities(titleMatch?.[1] ?? '').trim() || siteMeta.name.trim();
   const description = (metaContent(head, 'name', 'description') ?? '').trim() || siteMeta.summary.trim();
@@ -179,7 +178,7 @@ function seoHeadDefaults(head: string, html: string, pathname: string, siteOrigi
   add('property', 'og:description', description);
   add('property', 'og:type', 'website');
   add('property', 'og:url', pageUrl);
-  const image = ogImage || twitterImage || (socialPreviewImage ?? '');
+  const image = ogImage || twitterImage;
   add('property', 'og:image', image);
   add('name', 'twitter:image', image);
   add('name', 'twitter:card', image ? 'summary_large_image' : 'summary');

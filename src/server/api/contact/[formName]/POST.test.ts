@@ -163,7 +163,7 @@ describe('contact form handler', () => {
   });
 
   it('returns 500 when the contact configuration is unavailable', async () => {
-    const directory = mkdtempSync(join(tmpdir(), 'airo-contact-test-'));
+    const directory = mkdtempSync(join(tmpdir(), 'contact-form-test-'));
     const cwdSpy = vi.spyOn(process, 'cwd').mockReturnValue(directory);
     const response = makeResponse();
 

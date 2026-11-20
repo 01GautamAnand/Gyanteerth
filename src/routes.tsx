@@ -9,10 +9,7 @@ import NetworkPage from './pages/network';
 import MembershipPage from './pages/membership';
 import NewsPage from './pages/news';
 import ContactPage from './pages/contact';
-// Eager import so renderToString doesn't hit a Suspense boundary on 404 routes
-// and abort to client rendering. The prod 404 page is tiny; the dev-tools
-// variant stays lazy because it pulls in dev-only code we don't want in
-// production bundles.
+// Eager import so server rendering can render the 404 route without suspending.
 import ProdNotFoundPage from './pages/_404';
 
 const NotFoundPage = ProdNotFoundPage;
@@ -59,7 +56,7 @@ export const routes: RouteObject[] = [
     element: <ContactPage />,
   },
   {
-    id: 'airo-not-found',
+    id: 'site-not-found',
     path: '*',
     element: <NotFoundPage />,
   },

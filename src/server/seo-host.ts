@@ -3,9 +3,6 @@
 // custom-domain, dev, localhost) is a customer-attached domain. Customer
 // domains get Allow + self-canonical; system hosts get Disallow + noindex.
 export const SYSTEM_HOST_SUFFIXES = [
-	".airoapp.ai",
-	".test-airoapp.ai",
-	".dev-airoapp.ai",
 	".dev-godaddy.com",
 ];
 

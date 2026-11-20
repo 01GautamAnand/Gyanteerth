@@ -65,7 +65,7 @@ export default function HomePage() {
         {/* ── HERO ─────────────────────────────────────────────────────────── */}
         <section className="relative min-h-screen flex flex-col justify-center" aria-label="Hero">
           <img
-            src="/airo-assets/images/pages/home/hero"
+            src="/media/images/pages/home/hero"
             alt="Grand academic convocation hall"
             className="absolute inset-0 w-full h-full object-cover"
             loading="eager"
@@ -325,7 +325,7 @@ export default function HomePage() {
         {/* ── INSTITUTIONAL NETWORK ────────────────────────────────────────── */}
         <section className="relative overflow-hidden bg-background" aria-label="Institutional Network">
           <img
-            src="/airo-assets/images/pages/home/network-map"
+            src="/media/images/pages/home/network-map"
             alt="Map of India representing Gyanteerth's national network"
             className="absolute inset-0 w-full h-full object-cover opacity-10"
             loading="lazy"

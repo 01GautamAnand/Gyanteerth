@@ -76,12 +76,3 @@ pids
 
 # Agent memory store
 .memory/
-
-# Turnscript platform execution scripts (never commit/deploy)
-.airo/turnscript-*
-
-# Tool output caches (regenerated each run, read by UI)
-.airo/qa-history.json
-.airo/qa-runs/
-.airo/qa-report.json
-.airo/security-report.json

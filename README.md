@@ -16,10 +16,24 @@ npm run dev
 
 Vite serves the site at `http://localhost:5173` by default. The development server also handles the contact API and SSR routes.
 
+To run the production server locally, build both bundles and start the SSR server:
+
+```bash
+npm run build
+npm start
+```
+
+The production server listens on `PORT` (default `3000`) and serves the built client assets and SSR pages.
+
+## Elastic Beanstalk
+
+Run `npm run build` before creating a deployment bundle. The `.ebignore` file excludes local dependencies, credentials, and caches while retaining `dist/`, which contains the production server and client bundles. Elastic Beanstalk starts the app with `npm start`.
+
 ## Useful commands
 
 - `npm run dev` — start the development server
 - `npm run build` — build the client and SSR bundles
+- `npm start` — start the production SSR server (requires a prior build)
 - `npm run preview` — serve the production client bundle
 - `npm run test -- --run` — run the unit tests once
 - `npm run test:coverage` — run tests with v8 coverage
@@ -31,7 +45,7 @@ Vite serves the site at `http://localhost:5173` by default. The development serv
 ## Project layout
 
 ```text
-export-plugins/       Vite content, media, format, and router plugins
+export-plugins/       Vite content and media plugins
 public/               Static assets and browser scripts
 src/components/       Shared React components and UI primitives
 src/content/pages/    Validated page content in JSON
@@ -52,8 +66,8 @@ Set `GODADDY_API_BASE_URL` for the upstream environment, or set `VITE_GODADDY_AP
 
 ## Environment
 
-Copy `env.example` to `.env` when local overrides are needed. `VITE_PUBLIC_URL` supplies the SSR SEO fallback origin. `SITE_ID`, `FRONTEND_DOMAIN`, `ALLOWED_ORIGINS`, and `VITE_PARENT_ORIGIN` are optional platform or preview settings.
+Copy `env.example` to `.env` when local overrides are needed. `VITE_PUBLIC_URL` supplies the SSR SEO fallback origin. `FRONTEND_DOMAIN` and `ALLOWED_ORIGINS` are optional development-server settings.
 
 ## Vite plugins
 
-`vite.config.ts` loads plugins from `export-plugins/` for content validation, media assets, format overrides, API requests, and development SSR/worktree previews.
+`vite.config.ts` loads plugins from `export-plugins/` for content validation, media assets, and development API requests.

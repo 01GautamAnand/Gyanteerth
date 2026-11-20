@@ -13,11 +13,11 @@ const VIRTUAL_ID = 'virtual:content';
 const RESOLVED_VIRTUAL_ID = '\0' + VIRTUAL_ID;
 const RUNTIME_VIRTUAL_ID = 'virtual:content-runtime';
 const RESOLVED_RUNTIME_VIRTUAL_ID = '\0' + RUNTIME_VIRTUAL_ID;
-const AIRO_CONTENT_ID = '@airo/content';
+const SITE_CONTENT_ID = '@site/content';
 
 function directImportError(rel: string): Error {
   return new Error(
-    `[airo-content] Direct import of ${rel} is forbidden. ` +
+    `[site-content] Direct import of ${rel} is forbidden. ` +
     `Content files under src/content/ must be consumed through the ` +
     `virtual module:\n\n` +
     `  import { <key> } from 'virtual:content';\n\n` +
@@ -51,7 +51,7 @@ export function contentPlugin(options: Options = {}): Plugin {
   let schemasImportPath: string;
 
   return {
-    name: 'airo-content',
+    name: 'site-content',
     // `enforce: 'pre'` gives us resolveId priority over Vite's built-in JSON
     // plugin, so we can block direct .json imports under src/content/ before
     // Vite serves the file.
@@ -78,16 +78,16 @@ export function contentPlugin(options: Options = {}): Plugin {
       const reloadIfPresent = (resolvedId: string, label: string) => {
         const mod = s.moduleGraph.getModuleById(resolvedId);
         if (!mod) {
-          s.config.logger.info(`[airo-content] ${label} not yet in module graph — skipping reload`);
+          s.config.logger.info(`[site-content] ${label} not yet in module graph — skipping reload`);
           return;
         }
         void s.reloadModule(mod)
           .then(() => {
-            s.config.logger.info(`[airo-content] reloaded ${label} (HMR propagating)`);
+            s.config.logger.info(`[site-content] reloaded ${label} (HMR propagating)`);
           })
           .catch((err) => {
             s.config.logger.error(
-              `[airo-content] HMR reload failed for ${label}: ${String(err)}`,
+              `[site-content] HMR reload failed for ${label}: ${String(err)}`,
               { error: err as Error },
             );
             try {
@@ -100,7 +100,7 @@ export function contentPlugin(options: Options = {}): Plugin {
 
       const invalidate = (file: string, event: string) => {
         if (!file.startsWith(contentDir)) return;
-        s.config.logger.info(`[airo-content] ${event}: ${path.relative(projectRoot, file)}`);
+        s.config.logger.info(`[site-content] ${event}: ${path.relative(projectRoot, file)}`);
         reloadIfPresent(RESOLVED_VIRTUAL_ID, 'virtual:content');
         reloadIfPresent(RESOLVED_RUNTIME_VIRTUAL_ID, 'virtual:content-runtime');
       };
@@ -109,7 +109,7 @@ export function contentPlugin(options: Options = {}): Plugin {
       s.watcher.on('unlink', (f) => invalidate(f, 'unlink'));
 
       if (!existsSync(contentDir)) {
-        s.config.logger.info(`[airo-content] no ${relContentDir}/ yet — watcher armed, awaiting content`);
+        s.config.logger.info(`[site-content] no ${relContentDir}/ yet — watcher armed, awaiting content`);
         return;
       }
       s.watcher.add(contentDir);
@@ -127,7 +127,7 @@ export function contentPlugin(options: Options = {}): Plugin {
       if (source === VIRTUAL_ID) return RESOLVED_VIRTUAL_ID;
       if (source === RUNTIME_VIRTUAL_ID) return RESOLVED_RUNTIME_VIRTUAL_ID;
 
-      if (source === AIRO_CONTENT_ID) {
+      if (source === SITE_CONTENT_ID) {
         return path.resolve(projectRoot, 'content-lib/src/index.ts');
       }
 
@@ -199,7 +199,7 @@ async function discover(contentDir: string): Promise<DiscoveredEntry[]> {
       if (entry.name.startsWith('.')) continue;
       if (entry.name === 'site.json') continue;
       throw new Error(
-        `[airo-content] Unexpected file src/content/${entry.name}.\n` +
+        `[site-content] Unexpected file src/content/${entry.name}.\n` +
         `Page content belongs at src/content/pages/${entry.name}.\n` +
         `Data collections belong at src/content/data/${entry.name}.\n` +
         `The only JSON allowed directly at src/content/ is site.json.`,
@@ -265,7 +265,7 @@ function displayPath(contentDir: string, entry: DiscoveredEntry): string {
 // vs data/blog.json) already coexist as distinct namespace exports.
 function duplicateKeyError(contentDir: string, first: DiscoveredEntry, second: DiscoveredEntry): Error {
   return new Error(
-    `[airo-content] duplicate content key "${second.canonicalKey}" — both of these export "${second.canonicalKey}":\n` +
+    `[site-content] duplicate content key "${second.canonicalKey}" — both of these export "${second.canonicalKey}":\n` +
     `  ${displayPath(contentDir, first)}\n` +
     `  ${displayPath(contentDir, second)}\n` +
     `Delete or rename one of them so the keys differ.\n` +
@@ -300,7 +300,7 @@ async function readLiteral(entry: DiscoveredEntry): Promise<string> {
     value = await readEntryValue(entry);
   } catch (err) {
     const msg: string = err instanceof Error ? err.message : String(err);
-    throw new Error(`[airo-content] failed to parse ${entryLocation(entry)}: ${msg}`);
+    throw new Error(`[site-content] failed to parse ${entryLocation(entry)}: ${msg}`);
   }
   return JSON.stringify(value, null, 2);
 }
@@ -539,7 +539,7 @@ export async function validateContentEager(
     mod = await server.ssrLoadModule(schemasImportPath);
   } catch (err) {
     throw new Error(
-      `[airo-content] failed to evaluate ${schemasPath}: ` +
+      `[site-content] failed to evaluate ${schemasPath}: ` +
       `${err instanceof Error ? err.message : String(err)}`,
     );
   }
@@ -561,7 +561,7 @@ export async function validateContentEager(
       value = await readEntryValue(entry);
     } catch (err) {
       throw new Error(
-        `[airo-content] failed to parse ${where}: ${err instanceof Error ? err.message : String(err)}`,
+        `[site-content] failed to parse ${where}: ${err instanceof Error ? err.message : String(err)}`,
       );
     }
 
@@ -581,7 +581,7 @@ export async function validateContentEager(
       parsed = schema.parse(value);
     } catch (err) {
       throw new Error(
-        `[airo-content] content in ${where} does not match schemas.${entry.bareName}:\n` +
+        `[site-content] content in ${where} does not match schemas.${entry.bareName}:\n` +
         (err instanceof Error ? err.message : String(err)),
       );
     }
@@ -642,7 +642,7 @@ function strippedFieldsError(findings: readonly StrippedFinding[]): Error {
     (f: StrippedFinding): string => `  ${f.where}: ${f.paths.join(', ')}`,
   );
   return new Error(
-    `[airo-content] field(s) exist in the content file but are dropped before reaching virtual:content:\n` +
+    `[site-content] field(s) exist in the content file but are dropped before reaching virtual:content:\n` +
     `${lines.join('\n')}\n` +
     `Zod's z.object() strips any key it doesn't declare. These fields are present in the JSON above ` +
     `but missing from src/content/schemas.ts, so they never reach virtual:content. Regenerate ` +

@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 
 const COOKIE_CONSENT_KEY = 'c2_analytics_consent';
 const COOKIE_CONSENT_EXPIRES_DAYS = 365;
-const BANNER_RESET_KEY = 'airo-banner-reset';
 
 interface CookieConsent {
   analytics: boolean;
@@ -14,33 +13,22 @@ interface CookieConsent {
 declare global {
   interface Window {
     _signalsDataLayer?: unknown[];
-    _trfd?: unknown[];
     _allowCT?: boolean;
     revokeAnalyticsConsent?: () => void;
     __SCC_INIT__?: boolean;
   }
 }
 
-// Loads the SCC C2 script unconditionally and registers a consent-gated click
-// listener. SCC loads without waiting for consent — C2 manages its own
-// collection behavior; the banner gates what gets collected via _allowCT, not
-// whether the script loads. `ap` is pushed onto `_trfd` once so it appears on
-// all events for this page without repeating it per event.
+// Loads the SCC C2 script and gates click collection on visitor consent.
 function initTracking(): void {
   if (typeof window === 'undefined' || window.__SCC_INIT__) return;
   window.__SCC_INIT__ = true;
   window._signalsDataLayer = window._signalsDataLayer || [];
 
-  const appId: string | undefined = import.meta.env.SITE_ID;
-  window._trfd = window._trfd || [];
-  window._trfd.push({ ap: 'airo-app-builder', ...(appId ? { websiteId: appId } : {}) });
-
   const h = location.hostname;
-  const url = h === 'localhost' || h.includes('dev-airoapp')
+  const url = h === 'localhost' || h === '127.0.0.1' || h === '::1'
     ? 'https://img1.dev-wsimg.com/signals/js/clients/scc-c2/scc-c2.js'
-    : h.includes('test-airoapp')
-      ? 'https://img1.test-wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'
-      : 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js';
+    : 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js';
   const script = document.createElement('script');
   script.src = url;
   script.async = true;
@@ -78,7 +66,7 @@ function initTracking(): void {
       }
     }
 
-    track('airo.website.click', 'click', text || type, {
+    track('website.click', 'click', text || type, {
       element_type: type,
       element_text: text,
       element_id: el.id || undefined,
@@ -100,18 +88,6 @@ function initTracking(): void {
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-  const isEmbedded: boolean = typeof window !== 'undefined' && window.parent !== window;
-  const [hideForBuilderPreview, setHideForBuilderPreview] = useState<boolean>(
-    () => {
-      if (!isEmbedded) return false;
-      try {
-        return sessionStorage.getItem(BANNER_RESET_KEY) !== 'true';
-      } catch (e) {
-        console.warn('CookieBanner: sessionStorage unavailable, banner state will not persist across remounts:', e instanceof Error ? e.message : String(e));
-        return true;
-      }
-    }
-  );
 
   useEffect(function checkConsent() {
     if (typeof window === 'undefined') return;
@@ -165,35 +141,7 @@ export default function CookieBanner() {
     return () => { delete window.revokeAnalyticsConsent; };
   }, []);
 
-  useEffect(function listenForBuilderBuildComplete() {
-    if (typeof window === 'undefined' || window.parent === window) return;
-
-    function handleMessage(event: MessageEvent): void {
-      if (event.source !== window.parent) return;
-      if (event.data?.type === 'INITIAL_BUILD_COMPLETE') {
-        saveConsent(true);
-        setHideForBuilderPreview(true);
-        try {
-          sessionStorage.removeItem(BANNER_RESET_KEY);
-        } catch (e) {
-          console.warn('CookieBanner: sessionStorage unavailable, could not clear reset flag:', e instanceof Error ? e.message : String(e));
-        }
-      }
-      if (event.data?.type === 'RESET_INITIAL_BUILD_HIDE') {
-        setHideForBuilderPreview(false);
-        try {
-          sessionStorage.setItem(BANNER_RESET_KEY, 'true');
-        } catch (e) {
-          console.warn('CookieBanner: sessionStorage unavailable, reset flag will not persist:', e instanceof Error ? e.message : String(e));
-        }
-      }
-    }
-
-    window.addEventListener('message', handleMessage);
-    return () => window.removeEventListener('message', handleMessage);
-  }, []);
-
-  if (hideForBuilderPreview || !isLoaded || !showBanner) return null;
+  if (!isLoaded || !showBanner) return null;
 
   return (
     <div
@@ -202,7 +150,6 @@ export default function CookieBanner() {
       aria-live="polite"
       aria-label="Cookie consent banner"
       aria-describedby="cookie-banner-description"
-      data-airo-non-editable
     >
       <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">

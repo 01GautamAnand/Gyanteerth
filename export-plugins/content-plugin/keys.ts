@@ -239,11 +239,11 @@ export function findFatalDuplicates(entries: readonly KeyedEntry[]): Array<[Keye
  */
 export function assertSafeContentName(name: string, filename: string): void {
   if (!IDENTIFIER.test(name)) {
-    throw new Error(`[airo-content] invalid content key "${name}" from "${filename}" — must be a valid JS identifier`);
+    throw new Error(`[site-content] invalid content key "${name}" from "${filename}" — must be a valid JS identifier`);
   }
   if (RESERVED_ROOTS.has(name)) {
     throw new Error(
-      `[airo-content] reserved content key "${name}" from "${filename}" — ` +
+      `[site-content] reserved content key "${name}" from "${filename}" — ` +
       `"${name}" is reserved for the ${name} namespace export and cannot be used as a content file name. ` +
       `Rename the file to avoid shadowing the generated virtual module.`,
     );
@@ -421,7 +421,7 @@ export function assertSafeExportName(name: string, filename: string): void {
   assertSafeContentName(name, filename);
   if (JS_RESERVED_WORDS.has(name)) {
     throw new Error(
-      `[airo-content] reserved content key "${name}" from "${filename}" — ` +
+      `[site-content] reserved content key "${name}" from "${filename}" — ` +
       `"${name}" is a JS reserved word and cannot be used as an export name. ` +
       `Rename the file to avoid a syntax error in the emitted virtual module.`,
     );
