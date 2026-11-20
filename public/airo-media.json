@@ -1,0 +1,32 @@
+{
+  "pages/home/network-map": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1365550676"
+  },
+  "pages/home/hero": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/472942802"
+  },
+  "pages/home/about-editorial": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2161499995"
+  },
+  "logo/horizontal": {
+    "mediaType": "logo",
+    "currentUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png",
+    "darkSurfaceUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+  },
+  "logo/favicon": {
+    "mediaType": "logo",
+    "currentUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/4b97c262-cead-4fb2-aa1e-ac063a847c15/favicon-transparent-0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6/logo-logo.png",
+    "darkSurfaceUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/4b97c262-cead-4fb2-aa1e-ac063a847c15/favicon-transparent-0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6/logo-logo.png"
+  },
+  "pages/about/editorial-1": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1351416161"
+  },
+  "pages/initiatives/hero": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2245123111"
+  }
+}

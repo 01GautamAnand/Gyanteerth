@@ -1,0 +1,166 @@
+{
+  "hero": {
+    "label": "Organisation",
+    "headline": "Organisational Structure",
+    "subheadline": "Gyanteerth Educational Society operates through a structured, multi-tiered organisational framework designed to ensure effective governance, programme delivery, and institutional representation at the national, state, and regional levels."
+  },
+  "overview": {
+    "heading": "How the Society is Organised",
+    "body": [
+      {
+        "id": "ov1",
+        "text": "Gyanteerth's organisational structure is designed to balance centralised governance with distributed operational capacity. The Society's central administration provides strategic direction, policy oversight, and programme coordination, while state and regional units ensure effective outreach, institutional engagement, and on-the-ground delivery across India."
+      },
+      {
+        "id": "ov2",
+        "text": "The structure is built around four principal layers: the Central Administration, the Academic and Functional Committees, the State and Regional Coordination Units, and the Institutional Representatives who serve as the Society's primary points of contact with member schools and educational organisations."
+      }
+    ]
+  },
+  "tiers": [
+    {
+      "id": "tier-1",
+      "number": "01",
+      "label": "Central Administration",
+      "heading": "Central Administration",
+      "description": "The Central Administration is headquartered in India and comprises the elected office bearers of the Executive Committee — the President, Vice President, Secretary General, Joint Secretary, Treasurer, and Executive Members. The Central Administration is responsible for the overall governance, strategic direction, financial management, and official representation of the Society. All major institutional decisions, programme approvals, and policy matters are handled at this level.",
+      "units": [
+        {
+          "id": "ca-1",
+          "name": "Office of the President",
+          "role": "Overall leadership, official representation, and strategic direction of the Society."
+        },
+        {
+          "id": "ca-2",
+          "name": "Secretariat",
+          "role": "Day-to-day administration, official correspondence, record-keeping, and coordination of all institutional activities."
+        },
+        {
+          "id": "ca-3",
+          "name": "Finance Office",
+          "role": "Financial management, accounts, audit coordination, and regulatory compliance."
+        }
+      ]
+    },
+    {
+      "id": "tier-2",
+      "number": "02",
+      "label": "Academic & Functional Committees",
+      "heading": "Academic & Functional Committees",
+      "description": "The Society's work is supported by a set of standing committees, each responsible for a specific functional area. These committees operate under the authority of the Executive Committee and report to it on all matters within their respective domains. Committee members are appointed by the Executive Committee and may include both office bearers and co-opted subject matter experts.",
+      "units": [
+        {
+          "id": "ac-1",
+          "name": "Academic Committee",
+          "role": "Design, quality assurance, and oversight of all academic programmes, competitions, and examinations."
+        },
+        {
+          "id": "ac-2",
+          "name": "Finance Committee",
+          "role": "Financial oversight, budget approval, and audit coordination."
+        },
+        {
+          "id": "ac-3",
+          "name": "Membership & Institutional Relations Committee",
+          "role": "Institutional memberships, onboarding, network management, and inter-institutional partnerships."
+        },
+        {
+          "id": "ac-4",
+          "name": "Events & Programmes Committee",
+          "role": "Planning, coordination, and execution of all Society events, conferences, and programmes."
+        },
+        {
+          "id": "ac-5",
+          "name": "Communications & Publications Committee",
+          "role": "Official communications, publications, digital presence, and public relations."
+        }
+      ]
+    },
+    {
+      "id": "tier-3",
+      "number": "03",
+      "label": "State & Regional Coordination",
+      "heading": "State & Regional Coordination Units",
+      "description": "To ensure effective outreach and programme delivery across India's diverse educational landscape, Gyanteerth operates through State Coordination Units and, where required, Regional Coordination Units within states. These units are responsible for liaising with member institutions, coordinating state-level and regional-level programme delivery, and serving as the primary interface between the Central Administration and institutional members in their respective geographies.",
+      "units": [
+        {
+          "id": "sr-1",
+          "name": "State Coordinators",
+          "role": "Appointed by the Executive Committee; responsible for all Society activities within a designated state."
+        },
+        {
+          "id": "sr-2",
+          "name": "Regional Coordinators",
+          "role": "Appointed where required; responsible for a defined region within a state, reporting to the State Coordinator."
+        },
+        {
+          "id": "sr-3",
+          "name": "District Representatives",
+          "role": "Appointed in key districts; serve as the first point of contact for member institutions at the district level."
+        }
+      ]
+    },
+    {
+      "id": "tier-4",
+      "number": "04",
+      "label": "Institutional Representation",
+      "heading": "Institutional Representatives",
+      "description": "Each member institution of Gyanteerth designates an Institutional Representative — typically the Principal, Head of Institution, or a senior faculty member nominated by the institution. The Institutional Representative serves as the primary point of contact between the member institution and the Society, coordinates the institution's participation in Gyanteerth programmes, and communicates the Society's activities and opportunities to students, staff, and the institutional leadership.",
+      "units": [
+        {
+          "id": "ir-1",
+          "name": "Principal / Head of Institution",
+          "role": "Designated signatory and primary institutional authority for all Society-related matters."
+        },
+        {
+          "id": "ir-2",
+          "name": "Nodal Teacher / Programme Coordinator",
+          "role": "Designated faculty member responsible for day-to-day coordination of Gyanteerth programmes within the institution."
+        },
+        {
+          "id": "ir-3",
+          "name": "Student Representatives",
+          "role": "Senior students nominated by the institution to assist in programme coordination and peer communication."
+        }
+      ]
+    }
+  ],
+  "departments": {
+    "label": "Operational Departments",
+    "heading": "Operational Departments",
+    "intro": "The Central Administration operates through a set of functional departments that handle the Society's day-to-day operational requirements.",
+    "items": [
+      {
+        "id": "dep-1",
+        "title": "Programme & Academic Affairs",
+        "description": "Responsible for the design, scheduling, and delivery of all academic programmes, competitions, olympiads, and examinations conducted by the Society."
+      },
+      {
+        "id": "dep-2",
+        "title": "Institutional Relations & Membership",
+        "description": "Responsible for the management of institutional memberships, onboarding of new member institutions, and maintenance of the Society's institutional network."
+      },
+      {
+        "id": "dep-3",
+        "title": "Events & Conferences",
+        "description": "Responsible for the planning and execution of all Society events, including national conferences, conclaves, exhibitions, and award ceremonies."
+      },
+      {
+        "id": "dep-4",
+        "title": "Finance & Accounts",
+        "description": "Responsible for financial management, accounting, fee collection, expenditure oversight, and statutory compliance."
+      },
+      {
+        "id": "dep-5",
+        "title": "Communications & Digital",
+        "description": "Responsible for the Society's official communications, website, publications, social media presence, and stakeholder engagement."
+      },
+      {
+        "id": "dep-6",
+        "title": "Legal & Compliance",
+        "description": "Responsible for ensuring the Society's compliance with all applicable laws, regulations, and its own registered constitution and bye-laws."
+      }
+    ]
+  },
+  "note": "[Placeholder — Specific appointments, state units, and departmental heads will be updated upon formal publication. The structure described above reflects the Society's registered organisational framework.]"
+}

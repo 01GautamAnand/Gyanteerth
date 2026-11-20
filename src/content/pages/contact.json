@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "label": "Contact Us",
+    "headline": "Contact Gyanteerth",
+    "subheadline": "For enquiries about membership, programmes, partnerships, or any other matter, please write to us or complete the appropriate form below. We endeavour to respond to all correspondence within five working days."
+  },
+  "officeDetails": {
+    "label": "Registered Office",
+    "heading": "Registered Office",
+    "address": {
+      "line1": "[Placeholder — Street Address]",
+      "line2": "[Placeholder — City, State — PIN]",
+      "country": "India"
+    },
+    "email": "[Placeholder — office@gyanteerth.org]",
+    "phone": "[Placeholder — +91 XXXXX XXXXX]",
+    "hours": "Monday to Friday, 10:00 AM – 5:00 PM IST"
+  },
+  "enquiryTypes": [
+    {
+      "id": "eq-1",
+      "label": "General Enquiry",
+      "description": "For general questions about the Society, its work, and its programmes."
+    },
+    {
+      "id": "eq-2",
+      "label": "Membership",
+      "description": "For enquiries about institutional membership categories, eligibility, and the application process."
+    },
+    {
+      "id": "eq-3",
+      "label": "Programmes & Initiatives",
+      "description": "For enquiries about Gyanteerth's academic programmes, competitions, and educator development initiatives."
+    },
+    {
+      "id": "eq-4",
+      "label": "Partnerships & Network",
+      "description": "For enquiries about institutional partnerships, host institution arrangements, and network participation."
+    },
+    {
+      "id": "eq-5",
+      "label": "Governance & Administration",
+      "description": "For matters relating to the Society's governance, General Body, or administrative functions."
+    },
+    {
+      "id": "eq-6",
+      "label": "Media & Communications",
+      "description": "For press, media, and communications enquiries."
+    }
+  ],
+  "formSection": {
+    "label": "Write to Us",
+    "heading": "Send an Enquiry",
+    "body": "Please complete the form below. All fields marked with an asterisk are required. We will respond within five working days."
+  },
+  "note": "[Placeholder — Contact details, office address, and telephone number will be published upon confirmation. The information above reflects Gyanteerth's planned communications framework.]"
+}

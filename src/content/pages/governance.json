@@ -1,0 +1,159 @@
+{
+  "hero": {
+    "label": "Governance",
+    "headline": "Governance & Leadership",
+    "subheadline": "Gyanteerth Educational Society is governed by a dedicated body of educational professionals committed to institutional integrity, transparency, and academic purpose."
+  },
+  "overview": {
+    "heading": "Governance Overview",
+    "body": [
+      {
+        "id": "gov1",
+        "text": "Gyanteerth Educational Society operates under a formal governance structure established at the time of its registration. The Society is governed by a General Body and managed by an Executive Committee comprising elected office bearers and nominated members drawn from the educational community."
+      },
+      {
+        "id": "gov2",
+        "text": "The governance framework is designed to ensure institutional independence, financial transparency, and democratic accountability. All major decisions relating to the Society's programmes, finances, and strategic direction are taken collectively by the governing bodies in accordance with the Society's registered constitution and bye-laws."
+      },
+      {
+        "id": "gov3",
+        "text": "Gyanteerth maintains a clear separation between its governance functions and its operational activities, ensuring that the Society's work is guided by educational purpose rather than commercial or institutional interest."
+      }
+    ]
+  },
+  "executive": {
+    "label": "Executive Committee",
+    "heading": "Office Bearers",
+    "note": "[Placeholder — Official appointments to be announced. Names and profiles will be updated upon formal publication.]",
+    "members": [
+      {
+        "id": "eb-1",
+        "title": "President",
+        "name": "[Name — To Be Updated]",
+        "qualification": "[Qualification — To Be Updated]",
+        "profile": "The President provides overall leadership and strategic direction to the Society, presides over meetings of the General Body and Executive Committee, and serves as the principal representative of Gyanteerth in all official capacities."
+      },
+      {
+        "id": "eb-2",
+        "title": "Vice President",
+        "name": "[Name — To Be Updated]",
+        "qualification": "[Qualification — To Be Updated]",
+        "profile": "The Vice President supports the President in the discharge of official duties and assumes the responsibilities of the President in their absence. The Vice President also oversees specific programme areas as assigned by the Executive Committee."
+      },
+      {
+        "id": "eb-3",
+        "title": "Secretary General",
+        "name": "[Name — To Be Updated]",
+        "qualification": "[Qualification — To Be Updated]",
+        "profile": "The Secretary General is responsible for the day-to-day administration of the Society, maintenance of official records, correspondence, and coordination of all institutional activities and programmes."
+      },
+      {
+        "id": "eb-4",
+        "title": "Joint Secretary",
+        "name": "[Name — To Be Updated]",
+        "qualification": "[Qualification — To Be Updated]",
+        "profile": "The Joint Secretary assists the Secretary General in administrative functions and assumes secretarial responsibilities in the Secretary General's absence. The Joint Secretary also coordinates specific institutional partnerships and outreach activities."
+      },
+      {
+        "id": "eb-5",
+        "title": "Treasurer",
+        "name": "[Name — To Be Updated]",
+        "qualification": "[Qualification — To Be Updated]",
+        "profile": "The Treasurer is responsible for the financial management of the Society, maintenance of accounts, preparation of financial statements, and ensuring compliance with all applicable financial regulations and reporting requirements."
+      },
+      {
+        "id": "eb-6",
+        "title": "Executive Member",
+        "name": "[Name — To Be Updated]",
+        "qualification": "[Qualification — To Be Updated]",
+        "profile": "Executive Members participate in the collective governance of the Society, contribute to policy deliberations, and may be assigned specific responsibilities relating to programmes, partnerships, or institutional development."
+      }
+    ]
+  },
+  "general_body": {
+    "label": "General Body",
+    "heading": "General Body",
+    "body": [
+      {
+        "id": "gb1",
+        "text": "The General Body is the supreme governing authority of Gyanteerth Educational Society. It comprises all registered members of the Society and meets at least once annually to review the Society's activities, approve accounts, and elect or ratify the Executive Committee."
+      },
+      {
+        "id": "gb2",
+        "text": "The General Body has the authority to amend the Society's constitution and bye-laws, approve major policy decisions, and provide overall direction to the Society's work. All members of the General Body are entitled to participate in deliberations and exercise their vote on matters placed before the body."
+      }
+    ]
+  },
+  "committees": {
+    "label": "Committees",
+    "heading": "Standing Committees",
+    "intro": "The Executive Committee is supported by a set of standing committees responsible for specific functional areas of the Society's work.",
+    "items": [
+      {
+        "id": "com-1",
+        "title": "Academic Committee",
+        "description": "Responsible for the design, quality assurance, and oversight of all academic programmes, competitions, and examinations conducted by the Society. The Academic Committee ensures that all Gyanteerth programmes meet the highest standards of academic rigour and credibility."
+      },
+      {
+        "id": "com-2",
+        "title": "Finance Committee",
+        "description": "Responsible for financial oversight, budget approval, audit coordination, and ensuring the Society's financial management adheres to applicable regulations and best practices in institutional governance."
+      },
+      {
+        "id": "com-3",
+        "title": "Membership & Institutional Relations Committee",
+        "description": "Responsible for the management of institutional memberships, onboarding of new member institutions, maintenance of the institutional network, and development of inter-institutional partnerships."
+      },
+      {
+        "id": "com-4",
+        "title": "Events & Programmes Committee",
+        "description": "Responsible for the planning, coordination, and execution of all Gyanteerth events, conferences, conclaves, exhibitions, and institutional programmes at the national and regional levels."
+      },
+      {
+        "id": "com-5",
+        "title": "Communications & Publications Committee",
+        "description": "Responsible for the Society's official communications, publications, digital presence, and public relations — ensuring that Gyanteerth's work is accurately and professionally represented to all stakeholders."
+      }
+    ]
+  },
+  "advisory": {
+    "label": "Advisory Council",
+    "heading": "Advisory Council",
+    "body": [
+      {
+        "id": "adv1",
+        "text": "Gyanteerth is guided by an Advisory Council comprising distinguished educationists, academic administrators, and subject matter experts drawn from across India. The Advisory Council provides strategic counsel to the Executive Committee on matters of educational policy, programme design, and institutional development."
+      },
+      {
+        "id": "adv2",
+        "text": "Members of the Advisory Council serve in an honorary capacity and are appointed by the Executive Committee on the basis of their eminence, expertise, and commitment to the advancement of education in India."
+      }
+    ],
+    "note": "[Placeholder — Advisory Council members to be announced. Profiles will be updated upon formal publication.]"
+  },
+  "principles": {
+    "heading": "Governance Principles",
+    "items": [
+      {
+        "id": "gp-1",
+        "title": "Independence",
+        "description": "Gyanteerth operates as a fully independent educational society, free from affiliation with any single school, coaching institution, or commercial enterprise."
+      },
+      {
+        "id": "gp-2",
+        "title": "Transparency",
+        "description": "The Society maintains transparent governance practices, including regular financial reporting, open elections, and accessible records for all registered members."
+      },
+      {
+        "id": "gp-3",
+        "title": "Accountability",
+        "description": "All office bearers and committee members are accountable to the General Body and to the Society's registered constitution and bye-laws."
+      },
+      {
+        "id": "gp-4",
+        "title": "Integrity",
+        "description": "The Society upholds the highest standards of institutional integrity in all its programmes, partnerships, and governance decisions."
+      }
+    ]
+  }
+}

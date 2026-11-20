@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "label": "About the Society",
+    "headline": "An Independent Educational Society with a National Vision",
+    "subheadline": "Gyanteerth Educational Society was established to serve as an independent, non-partisan platform for academic excellence, institutional collaboration, and the advancement of educational opportunities across India."
+  },
+  "intro": {
+    "heading": "Introduction",
+    "body": [
+      {
+        "id": "p1",
+        "text": "Gyanteerth Educational Society is an independent national organisation registered under the Societies Registration Act. Operating across India, it functions as a neutral, non-commercial platform dedicated to the promotion of academic excellence, intellectual development, and meaningful institutional partnerships."
+      },
+      {
+        "id": "p2",
+        "text": "The Society designs and delivers structured academic programmes, competitions, and institutional initiatives that recognise merit, inspire achievement, and strengthen the educational ecosystem at the national level. It works in close collaboration with schools, colleges, educators, and educational administrators across the country."
+      },
+      {
+        "id": "p3",
+        "text": "Gyanteerth maintains a completely independent identity and is not affiliated with any single school, coaching institution, or commercial educational enterprise. Its work is guided by a commitment to institutional integrity, transparency, and educational purpose."
+      }
+    ]
+  },
+  "philosophy": {
+    "heading": "Founding Philosophy",
+    "pullquote": "Education must be a shared national endeavour — not the privilege of a few, but the foundation of all.",
+    "body": [
+      {
+        "id": "fp1",
+        "text": "Gyanteerth was founded on the belief that India's educational potential is best realised through collaboration, not competition between institutions. The founding philosophy holds that schools, educators, and students across the country — regardless of geography, board affiliation, or resource level — deserve access to high-quality academic platforms, recognition, and peer engagement."
+      },
+      {
+        "id": "fp2",
+        "text": "The Society was conceived as a bridge between institutions: a neutral, credible body that could create shared platforms for academic excellence, facilitate the exchange of best practices, and build a national community of educators and learners committed to the highest standards."
+      }
+    ]
+  },
+  "purpose": {
+    "heading": "Purpose & Identity",
+    "items": [
+      {
+        "id": "pur-1",
+        "title": "Academic Excellence",
+        "description": "To create rigorous, credible platforms that identify, celebrate, and inspire academic merit across disciplines and age groups."
+      },
+      {
+        "id": "pur-2",
+        "title": "Institutional Collaboration",
+        "description": "To build a national network of member institutions that share resources, best practices, and a common commitment to educational quality."
+      },
+      {
+        "id": "pur-3",
+        "title": "Educator Empowerment",
+        "description": "To support the professional development of teachers and educational administrators through structured programmes and peer learning."
+      },
+      {
+        "id": "pur-4",
+        "title": "Student Development",
+        "description": "To nurture well-rounded students through academic competitions, leadership programmes, and recognition of holistic achievement."
+      }
+    ]
+  },
+  "history": {
+    "heading": "Organisational History",
+    "note": "[Placeholder — Official organisational history to be updated upon publication.]",
+    "milestones": [
+      {
+        "id": "ms-1",
+        "year": "[Year — To Be Updated]",
+        "event": "Gyanteerth Educational Society formally established and registered.",
+        "detail": "Placeholder — Official founding details to be updated."
+      },
+      {
+        "id": "ms-2",
+        "year": "[Year — To Be Updated]",
+        "event": "First institutional partnerships and academic programmes launched.",
+        "detail": "Placeholder — Programme details to be updated."
+      },
+      {
+        "id": "ms-3",
+        "year": "[Year — To Be Updated]",
+        "event": "Expansion of the institutional network to multiple states.",
+        "detail": "Placeholder — Network details to be updated."
+      },
+      {
+        "id": "ms-4",
+        "year": "[Year — To Be Updated]",
+        "event": "Launch of national-level olympiads and inter-school championships.",
+        "detail": "Placeholder — Programme details to be updated."
+      },
+      {
+        "id": "ms-5",
+        "year": "Present",
+        "event": "Pan-India operations with a growing network of member institutions.",
+        "detail": "Gyanteerth continues to expand its reach and deepen its institutional partnerships across India."
+      }
+    ]
+  },
+  "approach": {
+    "heading": "Educational Approach",
+    "subheading": "Gyanteerth's approach to education is rooted in three core principles.",
+    "principles": [
+      {
+        "id": "ap-1",
+        "number": "01",
+        "title": "Rigour & Standards",
+        "description": "All Gyanteerth programmes are designed to the highest academic standards, ensuring that recognition and achievement carry genuine credibility and institutional weight."
+      },
+      {
+        "id": "ap-2",
+        "number": "02",
+        "title": "Inclusivity & Access",
+        "description": "Gyanteerth is committed to ensuring that its programmes are accessible to institutions and students across India, irrespective of geography, board affiliation, or institutional size."
+      },
+      {
+        "id": "ap-3",
+        "number": "03",
+        "title": "Collaboration & Community",
+        "description": "The Society believes that the most meaningful educational progress is achieved through collaboration — between institutions, between educators, and between students — rather than in isolation."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Learn More About Our Work",
+    "links": [
+      {
+        "id": "cta-1",
+        "label": "Vision, Mission & Objectives",
+        "href": "/vision-mission"
+      },
+      {
+        "id": "cta-2",
+        "label": "Governance & Leadership",
+        "href": "/governance"
+      },
+      {
+        "id": "cta-3",
+        "label": "Our Initiatives",
+        "href": "/initiatives"
+      }
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "pages/home/network-map": {
+    "orientations": "horizontal",
+    "graphicalStyles": "illustration,vector",
+    "minimumSize": "large",
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1365550676",
+    "searchQuery": "India map outline geographic network connections abstract",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2276608890",
+      "https://img1.wsimg.com/isteam/getty/2247470608",
+      "https://img1.wsimg.com/isteam/getty/1620616624"
+    ],
+    "userModified": false,
+    "createdAt": "2026-11-14T14:41:46.418Z",
+    "lastUpdated": "2026-11-14T14:41:46.418Z",
+    "gettyId": "1365550676",
+    "alternativeGettyIds": [
+      "2276608890",
+      "2247470608",
+      "1620616624"
+    ]
+  },
+  "pages/home/hero": {
+    "orientations": "horizontal",
+    "graphicalStyles": "photography",
+    "minimumSize": "large",
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/472942802",
+    "searchQuery": "grand university convocation hall India formal academic ceremony",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1449325732",
+      "https://img1.wsimg.com/isteam/getty/2253573195",
+      "https://img1.wsimg.com/isteam/getty/1477565844",
+      "https://img1.wsimg.com/isteam/getty/1521346293"
+    ],
+    "userModified": false,
+    "createdAt": "2026-11-14T14:41:47.338Z",
+    "lastUpdated": "2026-11-14T14:41:47.338Z",
+    "gettyId": "472942802",
+    "alternativeGettyIds": [
+      "1449325732",
+      "2253573195",
+      "1477565844",
+      "1521346293"
+    ]
+  },
+  "pages/home/about-editorial": {
+    "orientations": "horizontal",
+    "graphicalStyles": "photography",
+    "minimumSize": "large",
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2161499995",
+    "searchQuery": "Indian heritage architecture educational institution building exterior",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2165740936",
+      "https://img1.wsimg.com/isteam/getty/1368946309",
+      "https://img1.wsimg.com/isteam/getty/2294674181"
+    ],
+    "userModified": false,
+    "createdAt": "2026-11-14T14:41:48.567Z",
+    "lastUpdated": "2026-11-14T14:41:48.567Z",
+    "gettyId": "2161499995",
+    "alternativeGettyIds": [
+      "2165740936",
+      "1368946309",
+      "2294674181"
+    ]
+  },
+  "logo/horizontal": {
+    "mediaType": "logo",
+    "currentUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png",
+    "searchQuery": "A formal institutional wordmark for GYANTEERTH — an independent educational soci",
+    "alternatives": [],
+    "solidUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-original-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+    },
+    "mockupUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+    },
+    "landscapeMockupUrlMap": {},
+    "logoSourceMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png": {
+        "sessionId": "323bfe15-b769-4b7e-a38e-049e1376812f",
+        "logoId": "47d88a77-caa0-46c2-900a-c9dab83a0b37",
+        "groupId": "e9219f30-7be7-4430-92da-c946f4ec2ac8"
+      }
+    },
+    "productMockupsMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png": [
+        {
+          "type": "mug",
+          "label": "Mug",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-mug-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+        },
+        {
+          "type": "card",
+          "label": "Business Card",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-card-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+        },
+        {
+          "type": "tshirt",
+          "label": "T-Shirt",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-tshirt-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+        },
+        {
+          "type": "box",
+          "label": "Packaging",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-box-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+        }
+      ]
+    },
+    "productMockups": [
+      {
+        "type": "mug",
+        "label": "Mug",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-mug-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+      },
+      {
+        "type": "card",
+        "label": "Business Card",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-card-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+      },
+      {
+        "type": "tshirt",
+        "label": "T-Shirt",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-tshirt-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+      },
+      {
+        "type": "box",
+        "label": "Packaging",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-mockup-box-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png"
+      }
+    ],
+    "userModified": false,
+    "createdAt": "2026-11-14T14:42:18.426Z",
+    "lastUpdated": "2026-11-14T14:42:44.709Z",
+    "surfaceMode": "dark",
+    "generatedForSurfaceColor": "#0a1f44",
+    "darkSurfaceUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/323bfe15-b769-4b7e-a38e-049e1376812f/horizontal-transparent-47d88a77-caa0-46c2-900a-c9dab83a0b37/logo-logo.png",
+    "logoGroupId": "e9219f30-7be7-4430-92da-c946f4ec2ac8"
+  },
+  "logo/favicon": {
+    "mediaType": "logo",
+    "currentUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/4b97c262-cead-4fb2-aa1e-ac063a847c15/favicon-transparent-0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6/logo-logo.png",
+    "searchQuery": "favicon",
+    "alternatives": [],
+    "logoSourceMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/4b97c262-cead-4fb2-aa1e-ac063a847c15/favicon-transparent-0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6/logo-logo.png": {
+        "sessionId": "4b97c262-cead-4fb2-aa1e-ac063a847c15",
+        "logoId": "0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6",
+        "groupId": "e9219f30-7be7-4430-92da-c946f4ec2ac8"
+      }
+    },
+    "logoGroupId": "e9219f30-7be7-4430-92da-c946f4ec2ac8",
+    "solidUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/4b97c262-cead-4fb2-aa1e-ac063a847c15/favicon-transparent-0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/4b97c262-cead-4fb2-aa1e-ac063a847c15/favicon-original-0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6/logo-logo.png"
+    },
+    "userModified": false,
+    "createdAt": "2026-11-14T14:42:32.001Z",
+    "lastUpdated": "2026-11-14T14:42:44.815Z",
+    "surfaceMode": "dark",
+    "generatedForSurfaceColor": "#0a1f44",
+    "darkSurfaceUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/ecb93a86-fff9-47e7-8ca8-375446a6a7f3/session/4b97c262-cead-4fb2-aa1e-ac063a847c15/favicon-transparent-0b603ba5-5ab2-4a7f-b7dc-bae95aea3ff6/logo-logo.png"
+  },
+  "pages/about/editorial-1": {
+    "orientations": "horizontal",
+    "graphicalStyles": "photography",
+    "minimumSize": "large",
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1351416161",
+    "searchQuery": "formal academic library reading room books shelves India",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2245125973",
+      "https://img1.wsimg.com/isteam/getty/2293733458",
+      "https://img1.wsimg.com/isteam/getty/2148263755"
+    ],
+    "userModified": false,
+    "createdAt": "2026-11-14T14:44:25.388Z",
+    "lastUpdated": "2026-11-14T14:44:25.388Z",
+    "gettyId": "1351416161",
+    "alternativeGettyIds": [
+      "2245125973",
+      "2293733458",
+      "2148263755"
+    ]
+  },
+  "pages/initiatives/hero": {
+    "orientations": "horizontal",
+    "graphicalStyles": "photography",
+    "minimumSize": "large",
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2245123111",
+    "searchQuery": "students academic competition olympiad examination hall India",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1631063279",
+      "https://img1.wsimg.com/isteam/getty/1148219359",
+      "https://img1.wsimg.com/isteam/getty/2075585830"
+    ],
+    "userModified": false,
+    "createdAt": "2026-11-14T14:50:48.027Z",
+    "lastUpdated": "2026-11-14T14:50:48.027Z",
+    "gettyId": "2245123111",
+    "alternativeGettyIds": [
+      "1631063279",
+      "1148219359",
+      "2075585830"
+    ]
+  }
+}

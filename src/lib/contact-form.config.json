@@ -1,0 +1,22 @@
+{
+  "forms": {
+    "network-enquiry": {
+      "brandId": "63c8ae22-e319-4484-8bb6-6fd9c5480b59",
+      "categoryId": 93660577,
+      "title": "Network Enquiry",
+      "requiredFields": ["Institution / Organisation"]
+    },
+    "contact-us": {
+      "brandId": "63c8ae22-e319-4484-8bb6-6fd9c5480b59",
+      "categoryId": 93660577,
+      "title": "Contact Us",
+      "requiredFields": ["Nature of Enquiry"]
+    },
+    "membership-enquiry": {
+      "brandId": "63c8ae22-e319-4484-8bb6-6fd9c5480b59",
+      "categoryId": 93660577,
+      "title": "Membership Enquiry",
+      "requiredFields": ["Institution / Organisation"]
+    }
+  }
+}

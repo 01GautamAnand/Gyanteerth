@@ -1,0 +1,251 @@
+{
+  "hero": {
+    "label": "Our Initiatives",
+    "headline": "Academic Programmes & Institutional Initiatives",
+    "subheadline": "Gyanteerth designs and delivers a comprehensive range of academic programmes, competitions, and institutional initiatives that recognise merit, inspire achievement, and strengthen the educational ecosystem across India."
+  },
+  "overview": {
+    "heading": "What We Do",
+    "body": [
+      {
+        "id": "ov1",
+        "text": "Gyanteerth's initiatives span the full breadth of the educational experience — from rigorous academic competitions that identify and celebrate scholarly merit, to professional development programmes that empower teachers and educational administrators, to institutional forums that bring together the best of India's educational community."
+      },
+      {
+        "id": "ov2",
+        "text": "All Gyanteerth programmes are designed to the highest academic standards, ensuring that recognition and achievement carry genuine credibility and institutional weight. Every initiative is open to member institutions across India, irrespective of geography, board affiliation, or institutional size."
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "cat-1",
+      "number": "01",
+      "label": "Academic Competitions",
+      "heading": "Olympiads & Academic Competitions",
+      "description": "Gyanteerth conducts a structured series of national-level olympiads and academic competitions across core disciplines. These programmes are designed to identify and celebrate scholarly merit, challenge students beyond the standard curriculum, and provide a credible national platform for academic achievement.",
+      "programmes": [
+        {
+          "id": "p1-1",
+          "name": "National Science Olympiad",
+          "detail": "A multi-stage national competition testing conceptual understanding, analytical reasoning, and scientific inquiry across Physics, Chemistry, Biology, and Environmental Science."
+        },
+        {
+          "id": "p1-2",
+          "name": "National Mathematics Olympiad",
+          "detail": "A rigorous national competition in Mathematics, designed to identify and nurture mathematical talent from Class V through Class XII."
+        },
+        {
+          "id": "p1-3",
+          "name": "National English Language Olympiad",
+          "detail": "A national competition assessing reading comprehension, grammar, vocabulary, and written expression — promoting excellence in English language skills."
+        },
+        {
+          "id": "p1-4",
+          "name": "National General Knowledge & Current Affairs Olympiad",
+          "detail": "A national competition testing awareness of current affairs, history, geography, civics, and general knowledge across age groups."
+        },
+        {
+          "id": "p1-5",
+          "name": "National Social Science Olympiad",
+          "detail": "A national competition covering History, Geography, Political Science, and Economics, designed to deepen students' understanding of the social world."
+        }
+      ]
+    },
+    {
+      "id": "cat-2",
+      "number": "02",
+      "label": "Inter-School Championships",
+      "heading": "Inter-School Championships",
+      "description": "Gyanteerth's inter-school championship series provides a structured national platform for schools to compete across academic, creative, and co-curricular domains. These championships celebrate institutional excellence and foster a spirit of healthy competition and peer learning among India's schools.",
+      "programmes": [
+        {
+          "id": "p2-1",
+          "name": "National Inter-School Academic Championship",
+          "detail": "A team-based national academic competition in which school teams compete across multiple disciplines in a structured elimination format."
+        },
+        {
+          "id": "p2-2",
+          "name": "National Inter-School Debate Championship",
+          "detail": "A national debating competition for school students, conducted in English and Hindi, covering contemporary and classical debate formats."
+        },
+        {
+          "id": "p2-3",
+          "name": "National Inter-School Quiz Championship",
+          "detail": "A national quiz competition for school teams, covering science, technology, history, geography, current affairs, and general knowledge."
+        },
+        {
+          "id": "p2-4",
+          "name": "National Inter-School Creative Writing Championship",
+          "detail": "A national competition in creative and expository writing, recognising excellence in English and Hindi language expression."
+        }
+      ]
+    },
+    {
+      "id": "cat-3",
+      "number": "03",
+      "label": "Science & Innovation",
+      "heading": "Science Exhibitions & Innovation Fairs",
+      "description": "Gyanteerth promotes a culture of scientific inquiry and innovation through structured national science exhibitions and innovation fairs. These events provide students with a platform to present original research, working models, and innovative solutions to real-world problems.",
+      "programmes": [
+        {
+          "id": "p3-1",
+          "name": "National Science Exhibition",
+          "detail": "An annual national exhibition showcasing student science projects, working models, and research across all scientific disciplines."
+        },
+        {
+          "id": "p3-2",
+          "name": "National Innovation Fair",
+          "detail": "A national platform for student-led innovation projects that address real-world challenges through science, technology, engineering, and design."
+        },
+        {
+          "id": "p3-3",
+          "name": "National Environment & Sustainability Exhibition",
+          "detail": "A national exhibition focused on environmental science, sustainability, and climate action — encouraging students to engage with the most pressing challenges of our time."
+        }
+      ]
+    },
+    {
+      "id": "cat-4",
+      "number": "04",
+      "label": "Educator Development",
+      "heading": "Teacher & Educator Development",
+      "description": "Gyanteerth is committed to supporting the professional development of India's teachers and educational administrators. The Society's educator development programmes provide structured opportunities for professional learning, peer exchange, and recognition of teaching excellence.",
+      "programmes": [
+        {
+          "id": "p4-1",
+          "name": "National Teachers' Conclave",
+          "detail": "An annual national gathering of educators for professional development, peer learning, and the exchange of best practices in teaching and school leadership."
+        },
+        {
+          "id": "p4-2",
+          "name": "National Teaching Excellence Awards",
+          "detail": "A national recognition programme honouring teachers who have demonstrated exceptional commitment, innovation, and impact in their teaching practice."
+        },
+        {
+          "id": "p4-3",
+          "name": "School Leadership Development Programme",
+          "detail": "A structured professional development programme for school principals and senior educational administrators, focused on institutional leadership, governance, and management."
+        },
+        {
+          "id": "p4-4",
+          "name": "Subject-Specific Teacher Workshops",
+          "detail": "Discipline-specific professional development workshops for teachers, designed to deepen subject knowledge and introduce innovative pedagogical approaches."
+        }
+      ]
+    },
+    {
+      "id": "cat-5",
+      "number": "05",
+      "label": "Conferences & Forums",
+      "heading": "Educational Conferences & Forums",
+      "description": "Gyanteerth convenes national educational conferences and forums that bring together educators, administrators, policymakers, and academic leaders to discuss, debate, and advance the most important questions in Indian education.",
+      "programmes": [
+        {
+          "id": "p5-1",
+          "name": "National Education Conference",
+          "detail": "An annual national conference on education policy, pedagogy, and institutional development, bringing together leading voices from across India's educational community."
+        },
+        {
+          "id": "p5-2",
+          "name": "National Principals' Forum",
+          "detail": "A dedicated national forum for school principals and heads of institutions, focused on school leadership, governance, and the challenges of institutional management."
+        },
+        {
+          "id": "p5-3",
+          "name": "National Education Research Symposium",
+          "detail": "A national symposium for the presentation and discussion of original research in education, pedagogy, curriculum, and educational policy."
+        }
+      ]
+    },
+    {
+      "id": "cat-6",
+      "number": "06",
+      "label": "Student Development",
+      "heading": "Student Leadership & Development",
+      "description": "Beyond academic competitions, Gyanteerth invests in the holistic development of students through structured leadership programmes, recognition frameworks, and opportunities for personal and civic growth.",
+      "programmes": [
+        {
+          "id": "p6-1",
+          "name": "National Student Leadership Programme",
+          "detail": "A structured national programme developing leadership skills, civic awareness, and social responsibility in senior school students."
+        },
+        {
+          "id": "p6-2",
+          "name": "National Student Excellence Awards",
+          "detail": "A national recognition programme celebrating students who have demonstrated outstanding academic achievement, leadership, and contribution to their school and community."
+        },
+        {
+          "id": "p6-3",
+          "name": "National Model United Nations",
+          "detail": "A national Model UN conference providing students with a platform to engage with global issues, develop diplomatic skills, and build international awareness."
+        }
+      ]
+    },
+    {
+      "id": "cat-7",
+      "number": "07",
+      "label": "Academic Recognition",
+      "heading": "Academic Recognition & Awards",
+      "description": "Gyanteerth's recognition programmes celebrate excellence at every level — from individual students and teachers to institutions that have demonstrated an outstanding commitment to educational quality.",
+      "programmes": [
+        {
+          "id": "p7-1",
+          "name": "National School Excellence Awards",
+          "detail": "Annual national awards recognising schools that have demonstrated exceptional commitment to academic quality, institutional development, and student welfare."
+        },
+        {
+          "id": "p7-2",
+          "name": "National Academic Merit Certificates",
+          "detail": "Certificates of academic merit awarded to students who achieve distinction in Gyanteerth's olympiads and competitions."
+        },
+        {
+          "id": "p7-3",
+          "name": "Gyanteerth Institutional Accreditation",
+          "detail": "A formal accreditation framework recognising member institutions that meet Gyanteerth's standards for academic quality, governance, and student development."
+        }
+      ]
+    },
+    {
+      "id": "cat-8",
+      "number": "08",
+      "label": "Institutional Collaboration",
+      "heading": "Institutional Collaboration Programmes",
+      "description": "Gyanteerth creates structured platforms for inter-institutional collaboration — enabling schools and educational organisations to share resources, best practices, and expertise, and to build lasting partnerships across India's educational community.",
+      "programmes": [
+        {
+          "id": "p8-1",
+          "name": "School Partnership Programme",
+          "detail": "A structured programme pairing member institutions for the exchange of best practices, joint academic activities, and peer learning."
+        },
+        {
+          "id": "p8-2",
+          "name": "National Best Practices Exchange",
+          "detail": "An annual national forum for the documentation and sharing of institutional best practices in teaching, learning, and school management."
+        },
+        {
+          "id": "p8-3",
+          "name": "Institutional Resource Sharing Network",
+          "detail": "A national network enabling member institutions to share academic resources, teaching materials, and expertise across disciplines and geographies."
+        }
+      ]
+    }
+  ],
+  "note": "[Placeholder — Programme schedules, registration details, and specific dates will be published upon formal announcement. All programmes listed reflect Gyanteerth's institutional framework and are subject to confirmation.]",
+  "cta": {
+    "heading": "Participate in Our Programmes",
+    "body": "Gyanteerth's programmes are open to all member institutions. To learn more about participation, eligibility, and registration, contact the Society or enquire through the membership section.",
+    "links": [
+      {
+        "id": "cta-1",
+        "label": "Institutional Membership",
+        "href": "/membership"
+      },
+      {
+        "id": "cta-2",
+        "label": "Contact the Society",
+        "href": "/contact"
+      }
+    ]
+  }
+}

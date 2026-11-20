@@ -1,0 +1,159 @@
+{
+  "hero": {
+    "headline": "Advancing Education. Connecting Institutions. Inspiring Excellence.",
+    "subheadline": "An independent educational society dedicated to academic excellence, intellectual development, institutional collaboration, and the advancement of educational opportunities across India.",
+    "cta_primary": "Explore Our Initiatives",
+    "cta_secondary": "Institutional Membership"
+  },
+  "stats": [
+    {
+      "id": "stat-1",
+      "value": "Pan-India",
+      "label": "Operational Presence"
+    },
+    {
+      "id": "stat-2",
+      "value": "[Placeholder]",
+      "label": "Member Institutions"
+    },
+    {
+      "id": "stat-3",
+      "value": "[Placeholder]",
+      "label": "Years of Excellence"
+    },
+    {
+      "id": "stat-4",
+      "value": "[Placeholder]",
+      "label": "Academic Programmes"
+    }
+  ],
+  "intro": {
+    "pullquote": "Education is the foundation upon which a nation's future is built.",
+    "body": "Gyanteerth Educational Society is an independent national organisation committed to fostering academic excellence, promoting intellectual development, and building meaningful institutional partnerships across India. We work with schools, educators, and institutions to create platforms for learning, recognition, and growth."
+  },
+  "vision": {
+    "vision_title": "Our Vision",
+    "vision_text": "To be a leading national force in educational advancement — nurturing a culture of academic excellence, intellectual curiosity, and institutional collaboration that shapes the future of India.",
+    "mission_title": "Our Mission",
+    "mission_text": "To design and deliver high-quality academic programmes, competitions, and institutional initiatives that recognise merit, inspire achievement, and strengthen the educational ecosystem across India.",
+    "objectives_title": "Our Objectives",
+    "objectives_text": "To promote academic excellence through structured competitions and recognitions; to build a robust national network of member institutions; and to support the professional development of educators and students alike."
+  },
+  "initiatives": [
+    {
+      "id": "init-1",
+      "number": "01",
+      "title": "Olympiads & Academic Competitions",
+      "description": "Rigorous national-level academic competitions that identify and celebrate scholarly merit."
+    },
+    {
+      "id": "init-2",
+      "number": "02",
+      "title": "Inter-School Championships",
+      "description": "Structured inter-institutional competitions fostering healthy academic rivalry and collaboration."
+    },
+    {
+      "id": "init-3",
+      "number": "03",
+      "title": "Educational Conferences & Conclaves",
+      "description": "Forums for educators, administrators, and thought leaders to exchange knowledge and best practices."
+    },
+    {
+      "id": "init-4",
+      "number": "04",
+      "title": "Science & Innovation Exhibitions",
+      "description": "Platforms for students to present original research, experiments, and innovative thinking."
+    },
+    {
+      "id": "init-5",
+      "number": "05",
+      "title": "Student Development Programmes",
+      "description": "Holistic initiatives designed to nurture leadership, communication, and critical thinking skills."
+    },
+    {
+      "id": "init-6",
+      "number": "06",
+      "title": "Teacher Development Programmes",
+      "description": "Professional development opportunities that empower educators with contemporary pedagogical tools."
+    },
+    {
+      "id": "init-7",
+      "number": "07",
+      "title": "Academic Recognition & Awards",
+      "description": "Formal recognition of outstanding academic achievement by students and institutions."
+    },
+    {
+      "id": "init-8",
+      "number": "08",
+      "title": "Institutional Collaboration",
+      "description": "Strategic partnerships with schools and educational bodies to advance shared educational goals."
+    }
+  ],
+  "network": {
+    "heading": "A Growing National Network",
+    "body": "Gyanteerth's institutional network spans schools, colleges, and educational organisations across India. We are committed to expanding our reach, deepening partnerships, and creating a unified platform for academic excellence at the national level.",
+    "cta": "Explore the Network"
+  },
+  "governance": {
+    "heading": "Governance & Leadership",
+    "subheading": "Gyanteerth is governed by a dedicated body of educational professionals committed to institutional integrity, transparency, and academic purpose.",
+    "leaders": [
+      {
+        "id": "leader-1",
+        "title": "President",
+        "name": "[Name — To Be Updated]",
+        "description": "Placeholder — Official appointment to be announced."
+      },
+      {
+        "id": "leader-2",
+        "title": "Secretary General",
+        "name": "[Name — To Be Updated]",
+        "description": "Placeholder — Official appointment to be announced."
+      },
+      {
+        "id": "leader-3",
+        "title": "Treasurer",
+        "name": "[Name — To Be Updated]",
+        "description": "Placeholder — Official appointment to be announced."
+      }
+    ]
+  },
+  "membership": {
+    "heading": "Join the Gyanteerth Institutional Network",
+    "body": "We invite schools, colleges, and educational organisations across India to become part of the Gyanteerth institutional family. Membership offers access to our full range of academic programmes, recognition platforms, and a national network of peer institutions.",
+    "cta": "Enquire About Membership"
+  },
+  "news": {
+    "heading": "News & Announcements",
+    "items": [
+      {
+        "id": "news-1",
+        "category": "Official Announcement",
+        "date": "November 2026",
+        "title": "[Placeholder — Official Announcement]",
+        "excerpt": "This is a placeholder for an official announcement from Gyanteerth Educational Society. Content will be updated upon publication."
+      },
+      {
+        "id": "news-2",
+        "category": "Organisational Update",
+        "date": "November 2026",
+        "title": "[Placeholder — Organisational Update]",
+        "excerpt": "This is a placeholder for an organisational update. Content will be updated upon publication."
+      },
+      {
+        "id": "news-3",
+        "category": "Events & Activities",
+        "date": "November 2026",
+        "title": "[Placeholder — Upcoming Event]",
+        "excerpt": "This is a placeholder for an upcoming event or activity announcement. Content will be updated upon publication."
+      }
+    ],
+    "cta": "View All Announcements"
+  },
+  "contact": {
+    "address": "[Registered Office Address — To Be Updated]",
+    "email": "[official@gyanteerth.org — To Be Updated]",
+    "phone": "[Contact Number — To Be Updated]",
+    "cta": "Send an Enquiry"
+  }
+}

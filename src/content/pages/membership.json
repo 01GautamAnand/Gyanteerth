@@ -1,0 +1,193 @@
+{
+  "hero": {
+    "label": "Membership",
+    "headline": "Institutional Membership",
+    "subheadline": "Joining Gyanteerth as a member institution connects your school or educational organisation to a national network of academic excellence — and opens access to the Society's full range of programmes, resources, and recognition platforms."
+  },
+  "overview": {
+    "heading": "Why Become a Member",
+    "body": [
+      {
+        "id": "mb-ov1",
+        "text": "Gyanteerth institutional membership is designed for schools and educational organisations that are committed to academic quality, professional development, and the advancement of education in India. Membership is the gateway to the Society's complete portfolio of academic programmes, competitions, educator development initiatives, and national recognition frameworks."
+      },
+      {
+        "id": "mb-ov2",
+        "text": "Member institutions become part of a national community of practice — sharing knowledge, best practices, and resources with peer institutions across India, and contributing to the collective advancement of Indian education."
+      }
+    ]
+  },
+  "categories": {
+    "label": "Membership Categories",
+    "heading": "Membership Categories",
+    "intro": "Gyanteerth offers membership categories designed to suit the full range of educational institutions and organisations.",
+    "items": [
+      {
+        "id": "mc-1",
+        "number": "01",
+        "title": "Institutional Member",
+        "subtitle": "For individual schools and educational institutions",
+        "description": "Open to any registered school or educational institution — primary, secondary, or senior secondary — affiliated to any recognised board or operating under state government recognition. Institutional membership provides full access to all Gyanteerth programmes, competitions, and resources.",
+        "eligibility": [
+          {
+            "id": "mc1-e1",
+            "text": "Registered school or educational institution"
+          },
+          {
+            "id": "mc1-e2",
+            "text": "Affiliated to a recognised board or state government recognised"
+          },
+          {
+            "id": "mc1-e3",
+            "text": "Commitment to Gyanteerth's academic and ethical standards"
+          }
+        ]
+      },
+      {
+        "id": "mc-2",
+        "number": "02",
+        "title": "Organisational Member",
+        "subtitle": "For educational trusts, societies, and foundations",
+        "description": "Open to registered educational trusts, societies, and foundations operating one or more educational institutions. Organisational membership covers the trust or society as a whole, with benefits extending to all institutions under its umbrella.",
+        "eligibility": [
+          {
+            "id": "mc2-e1",
+            "text": "Registered educational trust, society, or foundation"
+          },
+          {
+            "id": "mc2-e2",
+            "text": "Operating one or more recognised educational institutions"
+          },
+          {
+            "id": "mc2-e3",
+            "text": "Commitment to Gyanteerth's academic and ethical standards"
+          }
+        ]
+      },
+      {
+        "id": "mc-3",
+        "number": "03",
+        "title": "Associate Member",
+        "subtitle": "For educational groups, networks, and allied organisations",
+        "description": "Open to multi-campus educational groups, school chains, and allied educational organisations that wish to engage with Gyanteerth's network and programmes without full institutional membership. Associate membership provides access to selected programmes and network activities.",
+        "eligibility": [
+          {
+            "id": "mc3-e1",
+            "text": "Multi-campus educational group, school chain, or allied educational organisation"
+          },
+          {
+            "id": "mc3-e2",
+            "text": "Demonstrated commitment to educational quality"
+          },
+          {
+            "id": "mc3-e3",
+            "text": "Endorsement by the Executive Committee"
+          }
+        ]
+      },
+      {
+        "id": "mc-4",
+        "number": "04",
+        "title": "Life Member",
+        "subtitle": "For institutions seeking permanent affiliation",
+        "description": "Life membership is available to institutions that have been Institutional Members in good standing for a minimum of three consecutive years and wish to establish a permanent affiliation with the Society. Life members enjoy all the benefits of Institutional Membership on a permanent basis.",
+        "eligibility": [
+          {
+            "id": "mc4-e1",
+            "text": "Institutional Member in good standing for a minimum of three consecutive years"
+          },
+          {
+            "id": "mc4-e2",
+            "text": "Approval by the Executive Committee"
+          },
+          {
+            "id": "mc4-e3",
+            "text": "Payment of the prescribed life membership fee"
+          }
+        ]
+      }
+    ]
+  },
+  "benefits": {
+    "label": "Member Benefits",
+    "heading": "Benefits of Membership",
+    "items": [
+      {
+        "id": "mb-1",
+        "title": "Access to All Academic Programmes",
+        "description": "Full access to Gyanteerth's complete portfolio of olympiads, inter-school championships, science exhibitions, and academic competitions."
+      },
+      {
+        "id": "mb-2",
+        "title": "Educator Development Programmes",
+        "description": "Priority access to the National Teachers' Conclave, Teaching Excellence Awards, School Leadership Development Programme, and subject-specific workshops."
+      },
+      {
+        "id": "mb-3",
+        "title": "National Recognition Platforms",
+        "description": "Eligibility for the National School Excellence Awards, National Academic Merit Certificates, and Gyanteerth Institutional Accreditation."
+      },
+      {
+        "id": "mb-4",
+        "title": "Institutional Network Access",
+        "description": "Membership of Gyanteerth's national institutional network — with access to peer institutions, best practice exchange, and collaborative programmes."
+      },
+      {
+        "id": "mb-5",
+        "title": "Governance Participation",
+        "description": "Voting rights at the General Body and eligibility to nominate representatives for the Society's governance bodies."
+      },
+      {
+        "id": "mb-6",
+        "title": "Official Membership Certificate",
+        "description": "An official Gyanteerth Institutional Membership Certificate, suitable for display and use in institutional communications."
+      },
+      {
+        "id": "mb-7",
+        "title": "Publications & Resources",
+        "description": "Access to Gyanteerth's publications, academic resources, and research outputs."
+      },
+      {
+        "id": "mb-8",
+        "title": "Dedicated Support",
+        "description": "A dedicated point of contact within the Society's regional coordination team for all programme and membership queries."
+      }
+    ]
+  },
+  "process": {
+    "label": "How to Apply",
+    "heading": "Membership Application Process",
+    "steps": [
+      {
+        "id": "mp-1",
+        "number": "01",
+        "title": "Submit an Enquiry",
+        "description": "Complete the membership enquiry form below. Our team will review your enquiry and respond within five working days with full application details."
+      },
+      {
+        "id": "mp-2",
+        "number": "02",
+        "title": "Application Review",
+        "description": "The Society's Membership & Institutional Relations Committee reviews all applications against the eligibility criteria for the relevant membership category."
+      },
+      {
+        "id": "mp-3",
+        "number": "03",
+        "title": "Approval & Onboarding",
+        "description": "Upon approval by the Executive Committee, the institution receives its official membership certificate and is onboarded to the Society's programmes and network."
+      },
+      {
+        "id": "mp-4",
+        "number": "04",
+        "title": "Annual Renewal",
+        "description": "Institutional membership is renewed annually. The Society's team will contact member institutions in advance of the renewal date with full details."
+      }
+    ]
+  },
+  "enquirySection": {
+    "label": "Membership Enquiry",
+    "heading": "Apply for Membership",
+    "body": "To begin the membership application process, please complete the enquiry form below. Our Membership & Institutional Relations team will respond within five working days."
+  },
+  "note": "[Placeholder — Membership fees, specific eligibility criteria, and application documentation requirements will be confirmed upon formal publication. The categories and benefits described reflect Gyanteerth's institutional framework.]"
+}

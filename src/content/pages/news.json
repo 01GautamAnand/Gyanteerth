@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "label": "News & Announcements",
+    "headline": "News & Announcements",
+    "subheadline": "Official announcements, organisational updates, forthcoming events, institutional achievements, and publications from Gyanteerth Educational Society."
+  },
+  "categories": [
+    {
+      "id": "cat-all",
+      "label": "All"
+    },
+    {
+      "id": "cat-announcements",
+      "label": "Announcements"
+    },
+    {
+      "id": "cat-events",
+      "label": "Events"
+    },
+    {
+      "id": "cat-achievements",
+      "label": "Achievements"
+    },
+    {
+      "id": "cat-publications",
+      "label": "Publications"
+    },
+    {
+      "id": "cat-updates",
+      "label": "Updates"
+    }
+  ],
+  "featured": {
+    "tag": "Announcements",
+    "date": "November 2026",
+    "headline": "[Placeholder] Gyanteerth Educational Society Formally Constituted",
+    "summary": "The Gyanteerth Educational Society has been formally constituted as a registered educational society under the Societies Registration Act. The Society's founding General Body meeting was convened, the Constitution adopted, and the inaugural Office Bearers elected. Full details will be published upon confirmation.",
+    "readMoreLabel": "Read More"
+  },
+  "items": [
+    {
+      "id": "news-1",
+      "tag": "Announcements",
+      "date": "November 2026",
+      "headline": "[Placeholder] Inaugural National Academic Olympiad — Registration Open",
+      "summary": "Registration for Gyanteerth's inaugural National Academic Olympiad is now open to member institutions. The Olympiad will be conducted across [Placeholder — number] centres in [Placeholder — number] states. Full details, including the syllabus, examination schedule, and registration portal, are available on the Initiatives page.",
+      "featured": false
+    },
+    {
+      "id": "news-2",
+      "tag": "Events",
+      "date": "December 2026",
+      "headline": "[Placeholder] National Teachers' Conclave — Save the Date",
+      "summary": "Gyanteerth's inaugural National Teachers' Conclave is scheduled for [Placeholder — date and venue]. The Conclave will bring together educators, school leaders, and education policy practitioners from across India for two days of keynote addresses, panel discussions, and professional development workshops.",
+      "featured": false
+    },
+    {
+      "id": "news-3",
+      "tag": "Updates",
+      "date": "November 2026",
+      "headline": "[Placeholder] Membership Applications Now Open",
+      "summary": "Gyanteerth is now accepting applications for Institutional, Organisational, and Associate Membership. Schools and educational organisations across India are invited to apply. Details of membership categories, eligibility criteria, and benefits are available on the Membership page.",
+      "featured": false
+    },
+    {
+      "id": "news-4",
+      "tag": "Achievements",
+      "date": "October 2026",
+      "headline": "[Placeholder] Gyanteerth Website Launched",
+      "summary": "The official website of Gyanteerth Educational Society has been launched, providing information on the Society's vision, mission, governance, initiatives, and membership. The website will be updated regularly with news, announcements, and programme information.",
+      "featured": false
+    },
+    {
+      "id": "news-5",
+      "tag": "Publications",
+      "date": "October 2026",
+      "headline": "[Placeholder] Inaugural Newsletter — Coming Soon",
+      "summary": "Gyanteerth's inaugural institutional newsletter will be published in [Placeholder — month and year]. The newsletter will feature updates on the Society's programmes, member institution profiles, educator spotlights, and articles on educational policy and practice.",
+      "featured": false
+    },
+    {
+      "id": "news-6",
+      "tag": "Events",
+      "date": "January 2027",
+      "headline": "[Placeholder] Inter-School Science Exhibition — Call for Entries",
+      "summary": "Gyanteerth invites member institutions to submit entries for the inaugural Inter-School Science Exhibition. The Exhibition will be held in [Placeholder — city and date]. Entry guidelines, judging criteria, and submission details will be circulated to member institutions.",
+      "featured": false
+    }
+  ],
+  "subscribeSection": {
+    "label": "Stay Informed",
+    "heading": "Stay Informed",
+    "body": "To receive official announcements and updates from Gyanteerth Educational Society directly, please contact the Society's office or write to us at the address below."
+  },
+  "note": "[Placeholder — All news items, dates, venues, and details on this page are indicative and will be updated upon formal confirmation. This page reflects Gyanteerth's planned communications framework.]"
+}

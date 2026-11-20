@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "label": "Institutional Network",
+    "headline": "Our Institutional Network",
+    "subheadline": "Gyanteerth's institutional network spans schools, colleges, and educational organisations across India — united by a shared commitment to academic excellence, professional development, and the advancement of education."
+  },
+  "overview": {
+    "heading": "A National Network of Educational Institutions",
+    "body": [
+      {
+        "id": "nw-ov1",
+        "text": "Gyanteerth's institutional network is the foundation of the Society's work. Member institutions — ranging from primary schools to senior secondary institutions, from single-campus schools to large multi-branch educational groups — form a community of practice that collectively advances the quality and reach of education across India."
+      },
+      {
+        "id": "nw-ov2",
+        "text": "The network provides member institutions with access to Gyanteerth's full range of academic programmes, professional development resources, inter-institutional collaboration opportunities, and national recognition platforms. It also gives institutions a voice in the Society's governance and a stake in shaping the direction of Indian education."
+      }
+    ]
+  },
+  "networkStats": [
+    {
+      "id": "ns-1",
+      "number": "[Placeholder]",
+      "label": "Member Institutions"
+    },
+    {
+      "id": "ns-2",
+      "number": "[Placeholder]",
+      "label": "States & Union Territories"
+    },
+    {
+      "id": "ns-3",
+      "number": "[Placeholder]",
+      "label": "Students Reached"
+    },
+    {
+      "id": "ns-4",
+      "number": "[Placeholder]",
+      "label": "Educators Engaged"
+    }
+  ],
+  "institutionTypes": {
+    "label": "Who We Work With",
+    "heading": "Types of Member Institutions",
+    "intro": "Gyanteerth's network is open to a broad range of educational institutions and organisations committed to academic excellence.",
+    "types": [
+      {
+        "id": "it-1",
+        "number": "01",
+        "title": "Primary & Upper Primary Schools",
+        "description": "Schools offering education from Class I through Class VIII, affiliated to any recognised board or operating under state government recognition."
+      },
+      {
+        "id": "it-2",
+        "number": "02",
+        "title": "Secondary & Senior Secondary Schools",
+        "description": "Schools offering education through Class X and Class XII, affiliated to CBSE, ICSE, state boards, or other recognised examining bodies."
+      },
+      {
+        "id": "it-3",
+        "number": "03",
+        "title": "International & IB Schools",
+        "description": "Schools offering internationally recognised curricula including the International Baccalaureate (IB), Cambridge (IGCSE/A Level), and other international programmes."
+      },
+      {
+        "id": "it-4",
+        "number": "04",
+        "title": "Residential & Boarding Schools",
+        "description": "Residential schools and boarding institutions providing full-time residential education, including Navodaya Vidyalayas, Sainik Schools, and private residential institutions."
+      },
+      {
+        "id": "it-5",
+        "number": "05",
+        "title": "Educational Trusts & Societies",
+        "description": "Registered educational trusts, societies, and foundations operating one or more educational institutions and committed to the advancement of education."
+      },
+      {
+        "id": "it-6",
+        "number": "06",
+        "title": "Educational Groups & Chains",
+        "description": "Multi-campus educational groups and school chains seeking institutional membership for their network of schools under a single organisational umbrella."
+      }
+    ]
+  },
+  "partnerships": {
+    "label": "Partnerships",
+    "heading": "Institutional Partnerships",
+    "body": "Gyanteerth actively seeks partnerships with educational organisations, academic bodies, and institutions that share its commitment to educational excellence. Partnerships may take the form of programme collaboration, joint events, academic exchange, or formal institutional affiliation.",
+    "types": [
+      {
+        "id": "pt-1",
+        "title": "Academic Programme Partners",
+        "description": "Institutions that co-design, co-deliver, or host Gyanteerth academic programmes, competitions, and examinations."
+      },
+      {
+        "id": "pt-2",
+        "title": "Host Institutions",
+        "description": "Schools and educational organisations that serve as examination or event centres for Gyanteerth programmes in their region."
+      },
+      {
+        "id": "pt-3",
+        "title": "Knowledge Partners",
+        "description": "Academic institutions, research organisations, and subject matter experts that contribute to the design and quality assurance of Gyanteerth's academic content."
+      },
+      {
+        "id": "pt-4",
+        "title": "Outreach Partners",
+        "description": "Educational organisations and networks that support Gyanteerth's outreach to underserved geographies and communities."
+      }
+    ]
+  },
+  "hostInstitutions": {
+    "label": "Host Institutions",
+    "heading": "Become a Host Institution",
+    "body": "Host institutions play a vital role in Gyanteerth's programme delivery. By serving as examination or event centres, host institutions extend the Society's reach, support students and schools in their region, and strengthen their own institutional profile as a centre of academic excellence.",
+    "benefits": [
+      {
+        "id": "hi-1",
+        "text": "Official recognition as a Gyanteerth Host Institution"
+      },
+      {
+        "id": "hi-2",
+        "text": "Priority access to Gyanteerth programmes and resources"
+      },
+      {
+        "id": "hi-3",
+        "text": "Enhanced institutional visibility within the regional network"
+      },
+      {
+        "id": "hi-4",
+        "text": "Dedicated support from the Society's regional coordination team"
+      }
+    ]
+  },
+  "enquirySection": {
+    "label": "Network Enquiry",
+    "heading": "Connect with the Network",
+    "body": "To learn more about Gyanteerth's institutional network, partnership opportunities, or hosting arrangements, please complete the enquiry form below. Our team will respond within five working days."
+  },
+  "note": "[Placeholder — Institution names, state-wise distribution, and partnership details will be published upon formal confirmation. The network described reflects Gyanteerth's institutional framework.]"
+}

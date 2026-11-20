@@ -1,0 +1,156 @@
+{
+  "hero": {
+    "label": "Our Purpose",
+    "headline": "Vision, Mission & Objectives",
+    "subheadline": "The foundational principles that guide Gyanteerth Educational Society's work, direction, and commitment to the advancement of education across India."
+  },
+  "vision": {
+    "label": "Vision",
+    "heading": "Our Vision",
+    "statement": "To be a leading national force in educational advancement — nurturing a culture of academic excellence, intellectual curiosity, and institutional collaboration that shapes the future of India.",
+    "elaboration": [
+      {
+        "id": "v1",
+        "text": "Gyanteerth envisions an India where every student, regardless of geography or institutional affiliation, has access to high-quality academic platforms that recognise merit, inspire achievement, and build a lifelong love of learning."
+      },
+      {
+        "id": "v2",
+        "text": "We see a future in which schools and educational institutions across the country are connected through a shared commitment to excellence — collaborating, learning from one another, and collectively raising the standard of education at the national level."
+      }
+    ]
+  },
+  "mission": {
+    "label": "Mission",
+    "heading": "Our Mission",
+    "statement": "To design and deliver high-quality academic programmes, competitions, and institutional initiatives that recognise merit, inspire achievement, and strengthen the educational ecosystem across India.",
+    "elaboration": [
+      {
+        "id": "m1",
+        "text": "Gyanteerth's mission is to serve as a credible, independent national platform that bridges institutions, celebrates academic achievement, and empowers educators and students alike."
+      },
+      {
+        "id": "m2",
+        "text": "We fulfil this mission by creating structured academic competitions, professional development programmes, institutional recognition frameworks, and collaborative forums that bring together the best of India's educational community."
+      }
+    ]
+  },
+  "objectives": {
+    "label": "Objectives",
+    "heading": "Our Objectives",
+    "intro": "Gyanteerth pursues its vision and mission through a set of clearly defined institutional objectives.",
+    "items": [
+      {
+        "id": "obj-1",
+        "number": "01",
+        "title": "Promote Academic Excellence",
+        "description": "To create rigorous, credible academic platforms — including olympiads, competitions, and recognition programmes — that identify and celebrate scholarly merit across disciplines and age groups."
+      },
+      {
+        "id": "obj-2",
+        "number": "02",
+        "title": "Build a National Institutional Network",
+        "description": "To develop and sustain a robust national network of member institutions — schools, colleges, and educational organisations — united by a shared commitment to educational quality and collaboration."
+      },
+      {
+        "id": "obj-3",
+        "number": "03",
+        "title": "Empower Educators",
+        "description": "To support the professional development of teachers and educational administrators through structured programmes, workshops, conclaves, and peer-learning opportunities."
+      },
+      {
+        "id": "obj-4",
+        "number": "04",
+        "title": "Develop Students Holistically",
+        "description": "To nurture well-rounded students through academic competitions, leadership initiatives, and recognition frameworks that value intellectual, creative, and personal achievement."
+      },
+      {
+        "id": "obj-5",
+        "number": "05",
+        "title": "Facilitate Institutional Collaboration",
+        "description": "To create structured platforms for inter-institutional exchange — enabling schools and educational bodies to share best practices, resources, and expertise."
+      },
+      {
+        "id": "obj-6",
+        "number": "06",
+        "title": "Advance Educational Research & Innovation",
+        "description": "To promote a culture of inquiry, research, and innovation in education through science exhibitions, academic forums, and structured opportunities for original student and educator work."
+      },
+      {
+        "id": "obj-7",
+        "number": "07",
+        "title": "Ensure Inclusivity & Access",
+        "description": "To make Gyanteerth's programmes accessible to institutions and students across India, irrespective of geography, board affiliation, medium of instruction, or institutional size."
+      },
+      {
+        "id": "obj-8",
+        "number": "08",
+        "title": "Uphold Institutional Integrity",
+        "description": "To operate as a transparent, non-partisan, and non-commercial organisation — maintaining the highest standards of institutional governance, credibility, and public trust."
+      }
+    ]
+  },
+  "philosophy": {
+    "label": "Institutional Philosophy",
+    "heading": "Institutional Philosophy",
+    "pullquote": "Excellence is not a destination — it is a discipline, a culture, and a shared commitment.",
+    "body": [
+      {
+        "id": "ph1",
+        "text": "Gyanteerth's institutional philosophy is rooted in the belief that education is the most powerful instrument for individual and national transformation. The Society holds that academic excellence, when pursued with rigour and integrity, is not the privilege of a few — it is a standard that every student and institution can aspire to and achieve."
+      },
+      {
+        "id": "ph2",
+        "text": "We believe that the most meaningful educational progress is achieved through collaboration rather than competition between institutions. By creating shared platforms, neutral forums, and structured opportunities for peer engagement, Gyanteerth seeks to build a national educational community that is greater than the sum of its parts."
+      },
+      {
+        "id": "ph3",
+        "text": "The Society is committed to the principle that recognition must be earned through merit, that standards must be maintained without compromise, and that every programme Gyanteerth delivers must carry genuine credibility and institutional weight."
+      }
+    ]
+  },
+  "commitment": {
+    "heading": "Our Commitment to Educational Development",
+    "items": [
+      {
+        "id": "com-1",
+        "title": "To Students",
+        "description": "To provide every student who engages with Gyanteerth's programmes a meaningful, credible, and enriching academic experience that recognises their merit and inspires their continued growth."
+      },
+      {
+        "id": "com-2",
+        "title": "To Educators",
+        "description": "To support and celebrate the teaching profession — recognising that the quality of education ultimately rests on the dedication, skill, and professional development of India's teachers."
+      },
+      {
+        "id": "com-3",
+        "title": "To Institutions",
+        "description": "To be a reliable, credible, and value-adding partner for every member institution — providing access to national platforms, peer networks, and recognition frameworks that enhance institutional standing."
+      },
+      {
+        "id": "com-4",
+        "title": "To the Nation",
+        "description": "To contribute, in a meaningful and measurable way, to the advancement of India's educational ecosystem — building the academic culture, institutional capacity, and human capital that a great nation requires."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Explore Our Work",
+    "links": [
+      {
+        "id": "cta-1",
+        "label": "About the Society",
+        "href": "/about"
+      },
+      {
+        "id": "cta-2",
+        "label": "Our Initiatives",
+        "href": "/initiatives"
+      },
+      {
+        "id": "cta-3",
+        "label": "Institutional Membership",
+        "href": "/membership"
+      }
+    ]
+  }
+}
