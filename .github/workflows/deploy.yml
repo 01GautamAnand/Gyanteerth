@@ -1,0 +1,163 @@
+name: Deploy Gyanteerth to Elastic Beanstalk
+
+on:
+  # Deploy only after the existing CI workflow has completed successfully.
+  workflow_run:
+    workflows: ["Gyanteerth CI"]
+    types: [completed]
+    branches: [main]
+  # Allows a deliberate manual redeployment from the main branch.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gyanteerth-production-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: >-
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main') ||
+      (github.event_name == 'workflow_dispatch' &&
+       github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      id-token: write
+
+    env:
+      AWS_REGION: ap-south-1
+      EB_APPLICATION_NAME: Gyanteerth
+      EB_ENVIRONMENT_NAME: Gyanteerth-prod
+
+    steps:
+      - name: Check out the exact commit that passed CI
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 26.13.1
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Build production frontend and Express SSR bundle
+        run: |
+          npm run clean
+          npm run build
+        env:
+          VITE_PUBLIC_URL: https://gyanteerth.in
+
+      - name: Validate required deployment files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f dist/server.bundle.mjs
+          test -f dist/client/index.html
+          test -d dist/bin
+          test -f src/lib/contact-form.config.json
+          node -e "const p = require('./package.json'); if (p.scripts?.start !== 'node dist/server.bundle.mjs') { console.error('Unexpected package.json start script'); process.exit(1); }"
+
+      - name: Create Elastic Beanstalk source bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .eb-staging gyanteerth-eb.zip
+          mkdir -p .eb-staging/src/lib
+
+          # The SSR bundle is built with Vite's ssr.noExternal setting, so its
+          # runtime imports are Node.js built-ins plus the generated dist/bin
+          # chunks. A minimal runtime package avoids installing the full build
+          # toolchain on the EC2 instance.
+          cat > .eb-staging/package.json <<'EOF'
+          {
+            "name": "gyanteerth",
+            "version": "1.0.0",
+            "private": true,
+            "type": "module",
+            "engines": { "node": ">=22.22.0" },
+            "scripts": { "start": "node dist/server.bundle.mjs" }
+          }
+          EOF
+
+          cp -a dist .eb-staging/
+          cp src/lib/contact-form.config.json .eb-staging/src/lib/
+
+          # The Express server loads this JSON at runtime from
+          # src/lib/contact-form.config.json. Keep the ZIP root at the
+          # application root (no enclosing project folder).
+          (
+            cd .eb-staging
+            zip -qr ../gyanteerth-eb.zip .
+          )
+
+          echo "Source bundle contents:"
+          unzip -l gyanteerth-eb.zip
+          test -s gyanteerth-eb.zip
+
+      - name: Smoke-test the exact deployment bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          (
+            cd .eb-staging
+            PORT=3107 node dist/server.bundle.mjs > ../.eb-smoke.log 2>&1 &
+            echo $! > ../.eb-smoke.pid
+          )
+          cleanup() {
+            if [ -f .eb-smoke.pid ]; then
+              kill "$(cat .eb-smoke.pid)" 2>/dev/null || true
+              rm -f .eb-smoke.pid
+            fi
+          }
+          trap cleanup EXIT
+
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:3107/api/health >/tmp/gyanteerth-health.json; then
+              cat /tmp/gyanteerth-health.json
+              break
+            fi
+            sleep 1
+          done
+          test -s /tmp/gyanteerth-health.json
+          curl --fail --silent http://127.0.0.1:3107/ >/tmp/gyanteerth-homepage.html
+          grep -q '<!doctype html' /tmp/gyanteerth-homepage.html
+
+      - name: Configure AWS credentials using GitHub OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-session-name: GitHubActions-Gyanteerth-Deploy
+
+      - name: Deploy to the existing Elastic Beanstalk environment
+        id: deploy
+        uses: aws-actions/aws-elasticbeanstalk-deploy@v1
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          application-name: ${{ env.EB_APPLICATION_NAME }}
+          environment-name: ${{ env.EB_ENVIRONMENT_NAME }}
+          deployment-package-path: gyanteerth-eb.zip
+          version-label: gyanteerth-${{ github.event.workflow_run.head_sha || github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          create-application-if-not-exists: false
+          create-environment-if-not-exists: false
+          create-s3-bucket-if-not-exists: false
+          wait-for-deployment: true
+          wait-for-environment-recovery: true
+          deployment-timeout: 900
+
+      - name: Show deployed version and environment URL
+        run: |
+          echo "Deployed version: ${{ steps.deploy.outputs.version-label }}"
+          echo "Environment URL: ${{ steps.deploy.outputs.environment-url }}"
+          echo "Environment health: ${{ steps.deploy.outputs.environment-health }}"
